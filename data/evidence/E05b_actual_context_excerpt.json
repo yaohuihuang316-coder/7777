@@ -1,0 +1,38 @@
+{
+  "note": "Public metadata-only derivative: actual context excerpt text omitted. Original full-context SHA, lengths, offsets and input-budget metadata retained. These fields permit identity checks, not semantic inspection or reconstruction of the full-context hash.",
+  "rows": [
+    {
+      "query_id": "brightpro:biology:11",
+      "condition": "hybrid_instruction",
+      "source_LF": 11,
+      "context_sha256_verified_on_full_original_text": "f1f794a64b58cb5624ee9a27bd7a40940e449be88cf2e489de66e5c30acd7903",
+      "full_context_characters": 9890,
+      "excerpt_start": 0,
+      "excerpt_end": 800,
+      "budget_unit": "utf8_bytes",
+      "budget": 16000,
+      "count_used": 9952,
+      "n_selected": 5
+    },
+    {
+      "query_id": "brightpro:biology:11",
+      "condition": "hybrid_instruction_selection",
+      "source_LF": 12,
+      "context_sha256_verified_on_full_original_text": "f1f794a64b58cb5624ee9a27bd7a40940e449be88cf2e489de66e5c30acd7903",
+      "full_context_characters": 9890,
+      "excerpt_start": 0,
+      "excerpt_end": 800,
+      "budget_unit": "utf8_bytes",
+      "budget": 16000,
+      "count_used": 9952,
+      "n_selected": 5
+    }
+  ],
+  "selection": {
+    "source_position_rows": 700,
+    "included_positions": 2,
+    "excluded_positions": 698,
+    "excluded_pct": 99.71428571428571,
+    "substring_rule": "first 800 Unicode characters per selected actual context; scientific content is unchanged; full text omitted"
+  }
+}

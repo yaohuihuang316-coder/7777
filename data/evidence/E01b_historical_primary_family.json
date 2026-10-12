@@ -1,0 +1,35 @@
+{
+  "family": [
+    "P-01_RQ3",
+    "P-02_RQ2"
+  ],
+  "family_size": 2,
+  "correction": "Holm",
+  "alpha": 0.05,
+  "tests": {
+    "P-01_RQ3_selection_vs_baseline_W_S_lb": {
+      "endpoint": "query_mean(W_S_lb_intervention − W_S_lb_baseline)",
+      "direction_frozen": "positive",
+      "statistic": "paired query-block sign-flip permutation (two-sided)",
+      "p_raw": 0.0006
+    },
+    "P-02_RQ2_M1_vs_M0_abs_error": {
+      "endpoint": "query_mean_M0_AE − query_mean_M1_AE（为正是 M1 未降低误差）",
+      "direction_frozen": "positive",
+      "statistic": "paired query-block sign-flip permutation (two-sided)",
+      "p_raw": 0.5949
+    }
+  },
+  "holm": {
+    "P-01_RQ3_selection_vs_baseline_W_S_lb": {
+      "p_raw": 0.0006,
+      "threshold": 0.025,
+      "reject": true
+    },
+    "P-02_RQ2_M1_vs_M0_abs_error": {
+      "p_raw": 0.5949,
+      "threshold": 0.05,
+      "reject": false
+    }
+  }
+}

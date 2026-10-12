@@ -1,0 +1,43 @@
+{
+  "scope": {
+    "positions": 28,
+    "nonempty_positions": 25,
+    "empty_positions": 3,
+    "query_groups": 14,
+    "claims": 91,
+    "original_nonempty_AB_annotations": 119,
+    "original_coverage_omissions": 77,
+    "all_original_AB_rows": 196,
+    "join_expected_stages": 78,
+    "join_actual_stages": 78,
+    "claim_join_expected": 91,
+    "claim_join_matched": 91,
+    "claim_join_dropped": 0,
+    "claim_join_ambiguous": 0,
+    "AB_same_excerpt_conflicts": 2,
+    "F_human_gold": 0
+  },
+  "three_objects": {
+    "original_aspect_label_distribution": {
+      "A_supported": 43,
+      "A_denominator": 98,
+      "B_supported": 43,
+      "B_denominator": 98
+    },
+    "nonempty_original_annotation_distribution": {
+      "A_supported": 43,
+      "A_denominator": 48,
+      "B_supported": 43,
+      "B_denominator": 71
+    },
+    "deduplicated_exact_excerpt_reference_distribution": {
+      "A_supported": 41,
+      "A_denominator": 46,
+      "B_supported": 39,
+      "B_denominator": 62,
+      "AB_agree_denominator": 15
+    },
+    "warning": "different objects and denominators; removing not_mentioned changes label composition, NOT evaluator accuracy improvement"
+  },
+  "warning": "77 omissions are original aspect-utility records, not unsupported assertions or human mistakes; 91 fixed excerpts have zero matched natural-F human gold."
+}

@@ -1,0 +1,86 @@
+{
+  "RQ1_pairs": [
+    {
+      "pair_id": "P1_bm25_vs_hybrid",
+      "left": "bm25",
+      "right": "hybrid_instruction",
+      "n": 175,
+      "classes": {
+        "concordant": 65,
+        "reversal": 19,
+        "retrieval_tie": 10,
+        "answer_tie": 51,
+        "double_tie": 30,
+        "unknown": 0
+      },
+      "correlation": {
+        "kind": "within_domain_query_permutation",
+        "seed": "rev7-perm-20261008",
+        "n_perm": 10000,
+        "unit": "query",
+        "r_obs": 0.5061517395012961,
+        "p_two_sided": 9.999000099990002e-05,
+        "n_ge": 0,
+        "n_valid_pairs": 175,
+        "note": "不用聚簇 bootstrap 代替零模型；不把方面行或评委请求当独立观测。",
+        "n_queries_used": 175
+      },
+      "evidence_status": "observed ranking vs automatic utility proxy discordance; quality inference unavailable"
+    },
+    {
+      "pair_id": "P2_dense_vs_hybrid",
+      "left": "dense_instruction",
+      "right": "hybrid_instruction",
+      "n": 175,
+      "classes": {
+        "concordant": 67,
+        "reversal": 34,
+        "retrieval_tie": 11,
+        "answer_tie": 40,
+        "double_tie": 23,
+        "unknown": 0
+      },
+      "correlation": {
+        "kind": "within_domain_query_permutation",
+        "seed": "rev7-perm-20261008",
+        "n_perm": 10000,
+        "unit": "query",
+        "r_obs": 0.3804636772558124,
+        "p_two_sided": 9.999000099990002e-05,
+        "n_ge": 0,
+        "n_valid_pairs": 175,
+        "note": "不用聚簇 bootstrap 代替零模型；不把方面行或评委请求当独立观测。",
+        "n_queries_used": 175
+      },
+      "evidence_status": "observed ranking vs automatic utility proxy discordance; quality inference unavailable"
+    },
+    {
+      "pair_id": "P3_bm25_vs_dense",
+      "left": "bm25",
+      "right": "dense_instruction",
+      "n": 175,
+      "classes": {
+        "concordant": 87,
+        "reversal": 22,
+        "retrieval_tie": 17,
+        "answer_tie": 32,
+        "double_tie": 17,
+        "unknown": 0
+      },
+      "correlation": {
+        "kind": "within_domain_query_permutation",
+        "seed": "rev7-perm-20261008",
+        "n_perm": 10000,
+        "unit": "query",
+        "r_obs": 0.5759161687085366,
+        "p_two_sided": 9.999000099990002e-05,
+        "n_ge": 0,
+        "n_valid_pairs": 175,
+        "note": "不用聚簇 bootstrap 代替零模型；不把方面行或评委请求当独立观测。",
+        "n_queries_used": 175
+      },
+      "evidence_status": "observed ranking vs automatic utility proxy discordance; quality inference unavailable"
+    }
+  ],
+  "analysis_identity": "Three comparisons reuse the same 175 queries; association is not a test of reversal counts or human utility."
+}

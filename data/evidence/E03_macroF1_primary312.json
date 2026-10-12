@@ -1,0 +1,144 @@
+{
+  "n_positions_primary": 84,
+  "n_rows_primary": 312,
+  "support": {
+    "n": 312,
+    "confusion": {
+      "supported": {
+        "supported": 116,
+        "unsupported": 6,
+        "uncertain": 0
+      },
+      "unsupported": {
+        "supported": 31,
+        "unsupported": 155,
+        "uncertain": 1
+      },
+      "uncertain": {
+        "supported": 1,
+        "unsupported": 2,
+        "uncertain": 0
+      }
+    },
+    "per_class": {
+      "supported": {
+        "tp": 116,
+        "fp": 6,
+        "fn": 32,
+        "support": 148,
+        "precision": 0.9508,
+        "recall": 0.7838,
+        "f1": 0.8593
+      },
+      "unsupported": {
+        "tp": 155,
+        "fp": 32,
+        "fn": 8,
+        "support": 163,
+        "precision": 0.8289,
+        "recall": 0.9509,
+        "f1": 0.8857
+      },
+      "uncertain": {
+        "tp": 0,
+        "fp": 3,
+        "fn": 1,
+        "support": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "_macro_f1": 0.5817,
+      "_macro_defined_labels": [
+        "supported",
+        "unsupported",
+        "uncertain"
+      ],
+      "_macro_undefined_labels": [],
+      "_macro_defined_any_zero": true
+    },
+    "three_class": {
+      "n": 312,
+      "raw_agreement": 0.8686,
+      "cohen_kappa": 0.7379,
+      "kappa_note": "ok"
+    },
+    "route_A": {
+      "n": 312,
+      "tp": 116,
+      "fp": 6,
+      "fn": 32,
+      "precision": 0.9508,
+      "recall": 0.7838,
+      "f1": 0.8593,
+      "f1_denominator": 270,
+      "accuracy": 0.8782
+    },
+    "route_B": {
+      "n": 308,
+      "tp": 116,
+      "fp": 6,
+      "fn": 31,
+      "precision": 0.9508,
+      "recall": 0.7891,
+      "f1": 0.8625,
+      "f1_denominator": 269,
+      "accuracy": 0.8799
+    },
+    "route_B_kappa": {
+      "n": 308,
+      "raw_agreement": 0.8799,
+      "cohen_kappa": 0.7574,
+      "kappa_note": "ok"
+    },
+    "route_B_per_class": {
+      "supported": {
+        "tp": 116,
+        "fp": 6,
+        "fn": 31,
+        "support": 147,
+        "precision": 0.9508,
+        "recall": 0.7891,
+        "f1": 0.8625
+      },
+      "unsupported": {
+        "tp": 155,
+        "fp": 31,
+        "fn": 6,
+        "support": 161,
+        "precision": 0.8333,
+        "recall": 0.9627,
+        "f1": 0.8934
+      },
+      "_macro_f1": 0.878,
+      "_macro_defined_labels": [
+        "supported",
+        "unsupported"
+      ],
+      "_macro_undefined_labels": [],
+      "_macro_defined_any_zero": false
+    },
+    "route_E": {
+      "auto_uncertain": 3,
+      "human_uncertain": 1,
+      "both": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": null,
+      "auto_uncertain_but_human_supported": 1,
+      "auto_uncertain_but_human_unsupported": 2,
+      "human_uncertain_but_auto_supported": 0,
+      "human_uncertain_but_auto_unsupported": 1
+    }
+  },
+  "historical_primary_macro_F1": 0.8725,
+  "corrected_primary_macro_F1_display": 0.5817,
+  "cross_check_primary_macro_F1": 0.581658,
+  "old_implementation": {
+    "13_compare_auto_vs_human.py:125": "2*pr*rc/(pr+rc) if (pr and rc) else None",
+    "13_compare_auto_vs_human.py:141": "bin_prf 同一写法",
+    "13_compare_auto_vs_human.py:130-131": "macro 只对非 None 求平均"
+  },
+  "corrected_rule": "F1 = 2TP/(2TP+FP+FN)；分母为 0 才无定义；有定义的 0 分保留在 macro 内",
+  "warning": "The retained route_E f1=null is historical; primary per_class includes defined zero uncertain F1."
+}

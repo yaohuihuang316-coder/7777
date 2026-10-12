@@ -1,0 +1,159 @@
+Historical code excerpts for inspection only; not executable or a general-purpose validated library.
+
+ARCHIVE/第三阶段/S9_确认分析_20261007/工具/build_s9_positions.py | original LF lines 104-118
+104: def a3_of(support_status, completion=None):
+105:     """主口径：答案侧支持 × 完成度 → a ∈ {0, .5, 1}。"""
+106:     if support_status == "supported":
+107:         if completion is None:
+108:             return 1.0
+109:         c = float(completion)
+110:         return 1.0 if c >= 0.75 else (0.5 if c > 0 else 0.0)
+111:     return 0.0
+112: 
+113: 
+114: def a_binary_of(support_status):
+115:     """与已发布 S4 二值实现并列的敏感性口径。"""
+116:     return 1.0 if support_status == "supported" else 0.0
+117: 
+118: 
+
+ARCHIVE/第三阶段/S9_确认分析_20261007/工具/s9_spec.py | original LF lines 264-338
+264: def _canonical_eval_records():
+265:     """按 (route, input_sha256) 归一。
+266: 
+267:     组内取「cost_usd>0 且 created_utc 最早」者为付费规范记录；若组内无付费记录
+268:     （例如全部为运行内共享副本）则取 created_utc 最早者。其余记录记 free_copy。
+269:     返回 (by_key, dup_stats)。
+270:     """
+271:     groups = {}
+272:     n_records = 0
+273:     for fn in sorted(os.listdir(S7_EVALS_DIR)):
+274:         if not fn.endswith(".jsonl"):
+275:             continue
+276:         for r in read_jsonl(os.path.join(S7_EVALS_DIR, fn)):
+277:             if r.get("status") != "ok":
+278:                 continue
+279:             n_records += 1
+280:             groups.setdefault((r["route"], r["input_sha256"]), []).append(r)
+281:     by_key = {}
+282:     n_free = 0
+283:     for k, recs in groups.items():
+284:         paid = [r for r in recs if float(r.get("cost_usd") or 0) > 0]
+285:         if paid:
+286:             rec = sorted(paid, key=lambda r: r["created_utc"])[0]
+287:             n_free += len(recs) - 1
+288:         else:
+289:             rec = sorted(recs, key=lambda r: r["created_utc"])[0]
+290:             n_free += len(recs) - 1
+291:         by_key[k] = rec
+292:     return by_key, {"n_ok_records_on_disk": n_records,
+293:                     "n_canonical_groups": len(groups),
+294:                     "n_free_copies": n_free}
+295: 
+296: 
+297: _EVAL_CACHE = {}
+298: 
+299: 
+300: def eval_records():
+301:     if "by_key" not in _EVAL_CACHE:
+302:         by_key, stats = _canonical_eval_records()
+303:         _EVAL_CACHE["by_key"] = by_key
+304:         _EVAL_CACHE["stats"] = stats
+305:     return _EVAL_CACHE["by_key"], _EVAL_CACHE["stats"]
+306: 
+307: 
+308: def eval_aspect_map():
+309:     """position_key -> {aspect_id: 评价方面行}，三路合并。"""
+310:     by_key, _ = eval_records()
+311:     out = {}
+312:     for r in by_key.values():
+313:         pk = r["position_key"]
+314:         disp = {x["display_id"]: x["aspect_id"] for x in (r.get("aspects_shown") or [])}
+315:         d = out.setdefault(pk, {})
+316:         for row in ((r.get("parsed") or {}).get("aspects") or []):
+317:             aid = disp.get(row.get("aspect_id"))
+318:             if aid is None:
+319:                 continue
+320:             d.setdefault(aid, {})[r["route"]] = row
+321:     return out
+322: 
+323: 
+324: def eval_position_extras():
+325:     """position_key -> 路由级附加读数（质量分数、输入级 failure_type 等）。"""
+326:     by_key, _ = eval_records()
+327:     out = {}
+328:     for r in by_key.values():
+329:         pk = r["position_key"]
+330:         d = out.setdefault(pk, {})
+331:         parsed = r.get("parsed") or {}
+332:         if r["route"] == "quality":
+333:             d["correctness_0_4"] = parsed.get("correctness_0_4")
+334:             d["aspect_completion"] = parsed.get("aspect_completion") or {}
+335:             d["correctness_reason"] = parsed.get("correctness_reason")
+336:         elif r["route"] == "input_support":
+337:             d["input_failure_type"] = parsed.get("failure_type") or ""
+338:     return out
+
+ARCHIVE/第三阶段/修订执行_20261008_v1/工具/build_rev_step2_recompute.py | original LF lines 62-95
+62:     # 位置归属：同 (位置,路) 取「付费优先、其次最早」
+63:     own = {}
+64:     for e in ok:
+65:         k = (e["position_key"], e["route"])
+66:         cur = own.get(k)
+67:         if cur is None:
+68:             own[k] = e
+69:         else:
+70:             cp, np_ = float(cur.get("cost_usd") or 0) > 0, float(e.get("cost_usd") or 0) > 0
+71:             if (np_ and not cp) or (np_ == cp and e["created_utc"] < cur["created_utc"]):
+72:                 own[k] = e
+73: 
+74:     # 共享组
+75:     grp = defaultdict(set)
+76:     for e in ok:
+77:         grp[(e["route"], e["input_sha256"])].add(e["position_key"])
+78:     shared = {k: sorted(v) for k, v in grp.items() if len(v) > 1}
+79: 
+80:     rows = {}
+81:     for p in positions:
+82:         pk = p["position_key"]
+83:         comp = ((own.get((pk, "quality")) or {}).get("parsed") or {}).get("aspect_completion") or {}
+84:         w_pub = sum(a["weight"] * a["a3"] for a in p["aspects"])
+85:         w_new = sum(a["weight"] * a3_missing_zero(a["answer_support_status"], comp.get(a["display_id"]))
+86:                     for a in p["aspects"])
+87:         rows[pk] = {
+88:             "position_key": pk, "query_id": p["query_id"], "domain": p["domain"],
+89:             "condition": p["condition"], "ctx_sha256": p["pack"]["context_sha256"],
+90:             "w_s_lb_published": w_pub, "w_s_lb_recomputed": w_new,
+91:             "diff": w_new - w_pub,
+92:             "correctness_published": p["labels"]["correctness_0_4"],
+93:             "correctness_owned": ((own.get((pk, "quality")) or {}).get("parsed") or {}).get("correctness_0_4"),
+94:             "completion_published": [a["aspect_completion"] for a in p["aspects"]],
+95:             "completion_owned": [comp.get(a["display_id"]) for a in p["aspects"]],
+
+ARCHIVE/第三阶段/修订执行_20261008_v1/工具/rev7_rq23_lib.py | original LF lines 85-110
+85: def paired_permutation(diffs, resamples=RQ23_PERM_RESAMPLES, seed=RQ23_PERM_SEED, tol=TOL):
+86:     """双侧 query 块符号翻转置换：p=(极端数+1)/(B+1)；全相同 ⇒ p=1。"""
+87:     diffs = list(diffs)
+88:     if not diffs:
+89:         return {"p_value": None, "observed_mean": None, "n_extreme": None,
+90:                 "resamples": resamples, "seed": seed,
+91:                 "note": "0/0＝NA（空集），不给 p 值"}
+92:     obs = sum(diffs) / len(diffs)
+93:     if all(abs(d - diffs[0]) <= tol for d in diffs):
+94:         return {"p_value": 1.0, "observed_mean": obs, "n_extreme": resamples,
+95:                 "resamples": resamples, "seed": seed,
+96:                 "reason": "全配对差值相同 ⇒ 任何翻转都给出同一统计量，按规范报 p=1"}
+97:     rng = random.Random(seed)
+98:     n = len(diffs)
+99:     n_extreme = 0
+100:     for _ in range(resamples):
+101:         s = 0.0
+102:         for d in diffs:
+103:             if rng.random() < 0.5:
+104:                 s += d
+105:             else:
+106:                 s -= d
+107:         if abs(s / n) >= abs(obs) - tol:
+108:             n_extreme += 1
+109:     return {"p_value": (n_extreme + 1) / (resamples + 1), "observed_mean": obs,
+110:             "n_extreme": n_extreme, "resamples": resamples, "seed": seed}

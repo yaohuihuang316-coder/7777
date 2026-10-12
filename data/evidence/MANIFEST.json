@@ -1,0 +1,485 @@
+{
+  "status": "usable with declared boundaries",
+  "created_date": "2026-10-12",
+  "files": [
+    {
+      "file": "E01_selection_175_pairs.json",
+      "sha256": "9176561321458314e410fcbf6e3535b2a4c9550d40ebf0d8ef2469dd39c871a6",
+      "bytes": 51862,
+      "format": "selected/transformed excerpt, NOT source byte copy",
+      "sources": [
+        {
+          "archive_relative_path": "第三阶段/修订执行_20261008_v1/产出/rev7_rq3_original_repaired_measurement_v2.json",
+          "source_sha256": "e0eb88198a5e9f202396f7988c65bad814dfa28c98ca95edb0048361b019eb87",
+          "bytes": 65178,
+          "LF_lines": 2025
+        }
+      ],
+      "selection": {
+        "source_query_rows": 175,
+        "included": 175,
+        "excluded": 0,
+        "excluded_pct": 0,
+        "summary_columns_included": 2,
+        "summary_columns_source": 4
+      }
+    },
+    {
+      "file": "E02_prediction_175.json",
+      "sha256": "95917b2b484fbdce6ab8bc165eee52a6cb26cd504276c2932beaaf4d8b03dce0",
+      "bytes": 290667,
+      "format": "selected/transformed excerpt, NOT source byte copy",
+      "sources": [
+        {
+          "archive_relative_path": "第三阶段/修订执行_20261008_v1/产出/rev7_rq2_same_target_v2.json",
+          "source_sha256": "a830491804bcb38e88ff8764af1e131e8e6c4e58050d1fe99f0e7efb73b1ff69",
+          "bytes": 310419,
+          "LF_lines": 9727
+        }
+      ],
+      "selection": {
+        "source_query_rows": 175,
+        "included_query_rows": 175,
+        "excluded_query_rows": 0,
+        "source_position_rows": 700,
+        "included_position_rows": 700,
+        "excluded_position_rows": 0,
+        "excluded_pct": 0
+      }
+    },
+    {
+      "file": "E03_macroF1_primary312.json",
+      "sha256": "5100c26c19037f44ea87414715ef3fb4e5ee13145756fdd6b842eeb578278a7f",
+      "bytes": 3443,
+      "format": "selected/transformed excerpt, NOT source byte copy",
+      "sources": [
+        {
+          "archive_relative_path": "第二阶段/05_评价与人工/指标修订_v2/对照报告_v2.json",
+          "source_sha256": "cf8b5c6c227263abbb86e31fbfdc9bc83a1d62558ec43bbb86b20f3992989a36",
+          "bytes": 38091,
+          "LF_lines": 1711
+        }
+      ],
+      "selection": {
+        "source_aspect_rows": 369,
+        "primary_included": 312,
+        "diagnostic_excluded": 57,
+        "excluded_pct": 15.447154471544716,
+        "source_positions": 98,
+        "primary_positions_included": 84,
+        "diagnostic_positions_excluded": 14,
+        "position_excluded_pct": 14.285714285714285,
+        "filter_kind": "Existing primary aggregate fields selected; no recomputed row-level statistic"
+      }
+    },
+    {
+      "file": "E04_RAGTruth32_statistics.json",
+      "sha256": "f9c5786e9c5abdeab04a30ce73dea6cf536656ee889e8723f1ca96c0f7607c36",
+      "bytes": 2020,
+      "format": "selected/transformed excerpt, NOT source byte copy",
+      "sources": [
+        {
+          "archive_relative_path": "第三阶段/双轴真实验证与贡献收口_20261010_v1/03_冻结与贡献/独立支持代理统计_v1.json",
+          "source_sha256": "3bb59586c1e1c77e5bf0659c7f85e1e920959ff548d81c486a0139ac07b72906",
+          "bytes": 6743,
+          "LF_lines": 154
+        }
+      ],
+      "selection": {
+        "source_groups": 32,
+        "included": 32,
+        "excluded": 0,
+        "excluded_pct": 0,
+        "not_included_reserved_groups": 118,
+        "reserved_semantic_records_read": 0
+      }
+    },
+    {
+      "file": "E04b_RAGTruth32_decisions.json",
+      "sha256": "7f65a5bec7e7bf1be971a33f1f8da257efcf92a3bd7741160b7dffa2f63357c9",
+      "bytes": 6035,
+      "format": "selected/transformed excerpt, NOT source byte copy",
+      "sources": [
+        {
+          "archive_relative_path": "第三阶段/双轴真实验证与贡献收口_20261010_v1/03_冻结与贡献/独立盲预测_split_v1.json",
+          "source_sha256": "26ddb103b5774036eeddd545ef385b42d8cf7e47cae6e1d55db1b5b6525487e0",
+          "bytes": 22505,
+          "LF_lines": 772
+        },
+        {
+          "archive_relative_path": "第三阶段/双轴真实验证与贡献收口_20261010_v1/03_冻结与贡献/独立盲预测_joint_v1.json",
+          "source_sha256": "5fd43f0737159942a6ababc7fece954bc9f7393762d54e60b00481d4ae01281f",
+          "bytes": 22574,
+          "LF_lines": 772
+        },
+        {
+          "archive_relative_path": "第三阶段/双轴真实验证与贡献收口_20261010_v1/04_独立验证准备/正式释放提取_v1/独立验证人工参考隔离sidecar_v1.json",
+          "source_sha256": "0d42135a390ec7ab7d854a96681f70af1c5821a05c1670a46880c9e07a9e5ecd",
+          "bytes": 18072,
+          "LF_lines": 550
+        }
+      ],
+      "selection": {
+        "source_rows_each": 32,
+        "included_rows_each": 32,
+        "excluded_rows_each": 0,
+        "join_expected": 32,
+        "join_matched": 32,
+        "join_dropped": 0,
+        "join_match_pct": 100
+      }
+    },
+    {
+      "file": "E05_real_case_two_positions.json",
+      "sha256": "2c747f89d0096ab5fa05d2467f346eef8728d0bb5b918a8398f2abd22117b551",
+      "bytes": 6678,
+      "format": "selected/transformed excerpt, NOT source byte copy",
+      "sources": [
+        {
+          "archive_relative_path": "研究三_AJIM英文初稿_v1.1_图片强化/来源材料/真实位置与核心机制核验_v1.json",
+          "source_sha256": "4ea16d9c32b1aab2eec89b18973fbd5900deb3f7898edcd67ef2d9ef43ce8574",
+          "bytes": 12537,
+          "LF_lines": 269
+        },
+        {
+          "archive_relative_path": "第三阶段/S7_生成与三路评价_20261006/产出/evals_confirm/biology_hybrid_instruction_evals.jsonl",
+          "source_sha256": "dc838a63b41369507e6be4e9c0c4e7da89a624070891296255e4d9441396679e",
+          "bytes": 2203029,
+          "LF_lines": 150
+        },
+        {
+          "archive_relative_path": "第三阶段/S7_生成与三路评价_20261006/产出/evals_confirm/biology_hybrid_instruction_selection_evals.jsonl",
+          "source_sha256": "ba023310234dbf12b9fd399974c2527aff282324c72812581e4bfef9fb2c1a7e",
+          "bytes": 2223240,
+          "LF_lines": 150
+        }
+      ],
+      "selection": {
+        "case_records_source": 4,
+        "case_records_included": 2,
+        "case_record_duplicates_excluded": 2,
+        "excluded_pct": 50,
+        "raw_file_filters": [
+          {
+            "source_total_JSONL_records": 150,
+            "excluded_records": 149,
+            "excluded_pct": 99.33333333333333,
+            "source_LF_line": 7
+          },
+          {
+            "source_total_JSONL_records": 150,
+            "excluded_records": 149,
+            "excluded_pct": 99.33333333333333,
+            "source_LF_line": 70
+          }
+        ]
+      },
+      "pre_public_submission_sha256": "7311fb1248498ee6f9da65a872a29fca6fbbf76da69d75717d5dd4dc554991b2",
+      "public_derivation": "Text-only disclosure change; frozen numeric fields retained. See docs/public_derivation.json."
+    },
+    {
+      "file": "E06_retrieval_and_analysis_config.json",
+      "sha256": "0c7640096534e75efd6ad66f5f7361a3fc66b528f81cc8dc1378b85aa561693b",
+      "bytes": 3133,
+      "format": "selected/transformed excerpt, NOT source byte copy",
+      "sources": [
+        {
+          "archive_relative_path": "第二阶段/00_方案与配置/phase2_config.json",
+          "source_sha256": "98d77805927429903a3e25df80478511edb27b4520171b08730e54c9d6243eb1",
+          "bytes": 3620,
+          "LF_lines": 83
+        },
+        {
+          "archive_relative_path": "第三阶段/双轴真实验证与贡献收口_20261010_v1/01_真实最小验证/独立模型与量级契约_v1.json",
+          "source_sha256": "278935a4587185ef904220ee3ca4c8601e6f6eabe182d607e75ee189e18942c0",
+          "bytes": 887,
+          "LF_lines": 28
+        },
+        {
+          "archive_relative_path": "第三阶段/双轴真实验证与贡献收口_20261010_v1/03_冻结与贡献/首HTTP前路由补充冻结_v1.json",
+          "source_sha256": "309e87f7fc39a010f8a432417578f18eb2a0c96ce546eb9968b120551a470b99",
+          "bytes": 2689,
+          "LF_lines": 44
+        }
+      ],
+      "selection": {
+        "data_rows": 0,
+        "configuration_allowlist_only": true,
+        "credentials_copied": 0,
+        "private_identity_fields_copied": 0
+      }
+    },
+    {
+      "file": "E07_checker_prompts.json",
+      "sha256": "a70fc7f511770c4c8256c303fc372b4b376e84ae32e1304c41aaffc9571d792b",
+      "bytes": 10787,
+      "format": "selected/transformed excerpt, NOT source byte copy",
+      "sources": [
+        {
+          "archive_relative_path": "第三阶段/双轴真实验证与贡献收口_20261010_v1/01_真实最小验证/独立两策略完整提示契约_v1.json",
+          "source_sha256": "3ac39fb8f4c44305d0189077d1b11a78c4d073aa6aaec94d1f13604fedbdd8bc",
+          "bytes": 10816,
+          "LF_lines": 17
+        }
+      ],
+      "selection": {
+        "configuration_only": true,
+        "source_keys": 7,
+        "retained_keys": 7,
+        "excluded_keys": 0,
+        "path_transform": "project absolute paths replaced by ARCHIVE"
+      }
+    },
+    {
+      "file": "E08_checker_schemas.json",
+      "sha256": "928ea1b2d00b008626da3b0ddcc61bba0959aeeebda702dd2a7a6311bd585c57",
+      "bytes": 6106,
+      "format": "selected/transformed excerpt, NOT source byte copy",
+      "sources": [
+        {
+          "archive_relative_path": "第三阶段/双轴真实验证与贡献收口_20261010_v1/01_真实最小验证/独立结构schema契约_v1.json",
+          "source_sha256": "928ea1b2d00b008626da3b0ddcc61bba0959aeeebda702dd2a7a6311bd585c57",
+          "bytes": 6106,
+          "LF_lines": 246
+        }
+      ],
+      "selection": {
+        "configuration_only": true,
+        "source_keys": 7,
+        "retained_keys": 7,
+        "excluded_keys": 0,
+        "path_transform": "project absolute paths replaced by ARCHIVE"
+      }
+    },
+    {
+      "file": "E09_claim_extractor_contract.json",
+      "sha256": "69bd3666bb507fb7be762880a2cb66ef7bafba2663868d1698939bc16f6f2ee9",
+      "bytes": 3629,
+      "format": "selected/transformed excerpt, NOT source byte copy",
+      "sources": [
+        {
+          "archive_relative_path": "第三阶段/双轴真实验证与贡献收口_20261010_v1/01_真实最小验证/独立官方抽取契约_v1.json",
+          "source_sha256": "baffe782cc90d26cca658a09fd52cb72eb9f6438fb6e1b37f13f3236fe9f379d",
+          "bytes": 3687,
+          "LF_lines": 48
+        }
+      ],
+      "selection": {
+        "configuration_only": true,
+        "source_keys": 15,
+        "retained_keys": 15,
+        "excluded_keys": 0,
+        "path_transform": "project absolute paths replaced by ARCHIVE"
+      }
+    },
+    {
+      "file": "E10_historical_code_excerpts.txt",
+      "sha256": "de34887cf38b601dbc5ed7e5492096fe6fae9abdc8647d27e0084ff74230de43",
+      "bytes": 7304,
+      "format": "selected/transformed excerpt, NOT source byte copy",
+      "sources": [
+        {
+          "archive_relative_path": "第三阶段/S9_确认分析_20261007/工具/build_s9_positions.py",
+          "source_sha256": "466df42ff2525e1614496f9c8cb5b13527f8ebe17f18e3e0950b482e4a59f284",
+          "bytes": 12347,
+          "LF_lines": 269
+        },
+        {
+          "archive_relative_path": "第三阶段/S9_确认分析_20261007/工具/s9_spec.py",
+          "source_sha256": "35dd3691b967c7110f3754ec74900d9c06210e5fb83c2bb971accd941d0a62df",
+          "bytes": 20454,
+          "LF_lines": 531
+        },
+        {
+          "archive_relative_path": "第三阶段/修订执行_20261008_v1/工具/build_rev_step2_recompute.py",
+          "source_sha256": "89067a9934fe97ef748ba3cf6f1d5a10ff886e164caa047028c9d652601cf943",
+          "bytes": 10671,
+          "LF_lines": 219
+        },
+        {
+          "archive_relative_path": "第三阶段/修订执行_20261008_v1/工具/rev7_rq23_lib.py",
+          "source_sha256": "fd3b40a12f6f8c3842d5b848686ad4478ea82c72d2befd79e00c43be4f517056",
+          "bytes": 25268,
+          "LF_lines": 496
+        }
+      ],
+      "selection": {
+        "code_ranges": [
+          {
+            "source": "第三阶段/S9_确认分析_20261007/工具/build_s9_positions.py",
+            "first_LF": 104,
+            "last_LF": 118
+          },
+          {
+            "source": "第三阶段/S9_确认分析_20261007/工具/s9_spec.py",
+            "first_LF": 264,
+            "last_LF": 338
+          },
+          {
+            "source": "第三阶段/修订执行_20261008_v1/工具/build_rev_step2_recompute.py",
+            "first_LF": 62,
+            "last_LF": 95
+          },
+          {
+            "source": "第三阶段/修订执行_20261008_v1/工具/rev7_rq23_lib.py",
+            "first_LF": 85,
+            "last_LF": 110
+          }
+        ],
+        "known_boundary": "paired_permutation all-constant branch is not generally valid for nonzero constant differences. The included 175 selection and prediction differences are not constant, so the branch is not used by reported comparisons."
+      }
+    },
+    {
+      "file": "E11_association_statistics.json",
+      "sha256": "dc263246a800295b5e747a12a8fc566f216c9dded089585abf674ca496f28696",
+      "bytes": 2757,
+      "format": "selected/transformed excerpt, NOT source byte copy",
+      "sources": [
+        {
+          "archive_relative_path": "第三阶段/第三阶段最终收口_20261009_v1/分析与结论/三RQ最终分析证据_v1.json",
+          "source_sha256": "b581dbe3b0b1f4e7fb301a10a93ecd2b6af543349613e4fad4d0f6e9504c5366",
+          "bytes": 27730,
+          "LF_lines": 755
+        }
+      ],
+      "selection": {
+        "source_pair_summaries": 3,
+        "included": 3,
+        "excluded": 0,
+        "excluded_pct": 0,
+        "unique_queries_per_pair": 175
+      }
+    },
+    {
+      "file": "E12_reference_migration_counts.json",
+      "sha256": "6fde007e8ef7902b119369285bfde0c4359aa631fb84c64a5dc09ac24ab397ff",
+      "bytes": 1350,
+      "format": "selected/transformed excerpt, NOT source byte copy",
+      "sources": [
+        {
+          "archive_relative_path": "第三阶段/双轴真实验证与贡献收口_20261010_v1/02_原开发案例回接/真实开发错误分析_v1/原dev真实双轴错误分析_v1.json",
+          "source_sha256": "d0498e23a7e865967ed2b7a69e9bd225117f176ee51e42c4a3c44c3ee5e91b91",
+          "bytes": 918258,
+          "LF_lines": 17669
+        }
+      ],
+      "selection": {
+        "source_claim_rows": 91,
+        "claim_text_rows_copied": 0,
+        "claim_text_rows_excluded": 91,
+        "excluded_claim_text_pct": 100,
+        "counts_only": true,
+        "original_annotation_denominator": 196
+      }
+    },
+    {
+      "file": "README.md",
+      "sha256": "c67595804113e6e375b13dfdaea633b4e9bbd79c9c8473d5867186e679630bfb",
+      "bytes": 5004,
+      "format": "selected/transformed excerpt, NOT source byte copy",
+      "sources": [],
+      "selection": {
+        "explanatory_document": true
+      },
+      "pre_public_submission_sha256": "e954f7b2e67a5217e20584063dec4e609a5df66ba014c8893b04173beffca974",
+      "public_derivation": "Text-only disclosure change; frozen numeric fields retained. See docs/public_derivation.json."
+    },
+    {
+      "file": "verify_evidence.py",
+      "sha256": "26ca95a9b0464405cfa3572d45e6dbc4635adb756ee636e28829b1c48571b349",
+      "bytes": 1644,
+      "format": "selected/transformed excerpt, NOT source byte copy",
+      "sources": [],
+      "selection": {
+        "standalone_standard_library_only": true,
+        "network_calls": 0,
+        "writes": 0,
+        "new_statistical_tests": 0
+      }
+    },
+    {
+      "file": "E01b_historical_primary_family.json",
+      "sha256": "2e6e60baed787ce1a4429b17eab67ae12c40fabb792183712c2c99183e8f3268",
+      "bytes": 919,
+      "format": "selected/transformed excerpt, NOT source byte copy",
+      "sources": [
+        {
+          "archive_relative_path": "第三阶段/S9_确认分析_20261007/产出/s9_analysis_v1.json",
+          "source_sha256": "aae7fb05bd99bfa92a61dff6003ede551ec10944824341fcfa78f08190f89543",
+          "bytes": 597386,
+          "LF_lines": 15940
+        }
+      ],
+      "selection": {
+        "JSON_pointer": "/primary_family/{family,family_size,correction,alpha,tests,holm}",
+        "original_family_tests": 2,
+        "included_tests": 2,
+        "excluded_tests": 0,
+        "note": "Historical original .0006 only; results withdrawn where repaired. No regenerated test."
+      }
+    },
+    {
+      "file": "E01c_affected_position_counts.json",
+      "sha256": "c44cbdbd6c2944a106b1e7fb82051b72a3ab84bc6cc3e006f63d8856378016fc",
+      "bytes": 272,
+      "format": "selected/transformed excerpt, NOT source byte copy",
+      "sources": [
+        {
+          "archive_relative_path": "第三阶段/修订执行_20261008_v1/产出/affected_positions_v1.json",
+          "source_sha256": "ee36de2f7327e8c746f511c1db5308709cd7bf5dc0232073d37160ba198ec92b",
+          "bytes": 24692,
+          "LF_lines": 688
+        }
+      ],
+      "selection": {
+        "JSON_pointer": "/{tag,rule,n_affected,n_by_kind,n_all_positions}",
+        "source_position_detail_rows": 56,
+        "detail_rows_copied": 0,
+        "detail_rows_excluded": 56,
+        "excluded_detail_pct": 100,
+        "aggregate_only": true,
+        "denominator_all_positions": 700,
+        "warning": "56 whole-answer correctness restorations and 38 a3 changes are different fields, not 56 proxy changes."
+      }
+    },
+    {
+      "file": "E05b_actual_context_excerpt.json",
+      "sha256": "defe5d2211a0167b97f69935a609c2e8c18b996ca9ac78b89460399aab5a60ed",
+      "bytes": 1462,
+      "format": "selected/transformed excerpt, NOT source byte copy",
+      "sources": [
+        {
+          "archive_relative_path": "第三阶段/S6_确认检索输入_20261006/产出/inputs_confirm/s6_inputs_v1.jsonl",
+          "source_sha256": "4f6bdbe0b3932ba613cf86f346a0e4c9ce4f782a7fd6a5c1807c05a323d00099",
+          "bytes": 10341110,
+          "LF_lines": 700
+        }
+      ],
+      "selection": {
+        "source_position_rows": 700,
+        "included_positions": 2,
+        "excluded_positions": 698,
+        "excluded_pct": 99.71428571428571,
+        "substring_rule": "first 800 Unicode characters per selected actual context; scientific content is unchanged; full text omitted"
+      },
+      "pre_public_submission_sha256": "b713f50c149262e4a5250d7f0e7328952ed57425e063d6c03a4273cd3fdadcf4",
+      "public_derivation": "Text-only disclosure change; frozen numeric fields retained. See docs/public_derivation.json."
+    }
+  ],
+  "source_records_only_from_already_used_sets": true,
+  "original_artifacts_modified": 0,
+  "new_experiments": 0,
+  "new_model_requests": 0,
+  "new_statistical_tests": 0,
+  "reserved_semantic_records_read": 0,
+  "manifest_self_digest_excluded": true,
+  "public_release": {
+    "repository": "https://github.com/yaohuihuang316-coder/7777",
+    "date": "2026-10-12",
+    "variant": "public-text-redacted-v1",
+    "redacted_field_count": 4,
+    "underlying_text_redistributed": false,
+    "existing_submission_archive_unchanged": true,
+    "new_experiments": 0
+  }
+}

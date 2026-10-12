@@ -1,0 +1,161 @@
+{
+  "case_position": "brightpro:biology:11|hybrid_instruction_selection",
+  "canonical_owner": "brightpro:biology:11|hybrid_instruction",
+  "actual_context_sha256": "f1f794a64b58cb5624ee9a27bd7a40940e449be88cf2e489de66e5c30acd7903",
+  "answer_sha256": "9bb8dd6e34e36c3fcd8f26da52e1e4f2473a6bc52c9a8ca9157f360da5999282",
+  "quality_payload_sha256": "15c872883b655d037d850097352e11841c7c3f012da607c218e663f61946638d",
+  "aspects": [
+    {
+      "aspect_id": "brightpro:biology:biology-11-a1",
+      "display_id": "F01",
+      "weight": 0.3,
+      "support": "unsupported",
+      "old_completion": null,
+      "old_a3": 0.0,
+      "restored_completion": 0,
+      "restored_a3": 0.0,
+      "old_contribution": 0.0,
+      "restored_contribution": 0.0
+    },
+    {
+      "aspect_id": "brightpro:biology:biology-11-a2",
+      "display_id": "F02",
+      "weight": 0.3,
+      "support": "unsupported",
+      "old_completion": null,
+      "old_a3": 0.0,
+      "restored_completion": 0,
+      "restored_a3": 0.0,
+      "old_contribution": 0.0,
+      "restored_contribution": 0.0
+    },
+    {
+      "aspect_id": "brightpro:biology:biology-11-a3",
+      "display_id": "F03",
+      "weight": 0.2,
+      "support": "supported",
+      "old_completion": null,
+      "old_a3": 1.0,
+      "restored_completion": 0.5,
+      "restored_a3": 0.5,
+      "old_contribution": 0.2,
+      "restored_contribution": 0.1
+    },
+    {
+      "aspect_id": "brightpro:biology:biology-11-a4",
+      "display_id": "F04",
+      "weight": 0.2,
+      "support": "unsupported",
+      "old_completion": null,
+      "old_a3": 0.0,
+      "restored_completion": 0,
+      "restored_a3": 0.0,
+      "old_contribution": 0.0,
+      "restored_contribution": 0.0
+    }
+  ],
+  "old_position_proxy": 0.2,
+  "restored_position_proxy": 0.1,
+  "owner_position_proxy": 0.1,
+  "old_paired_difference": 0.1,
+  "restored_paired_difference": 0.0,
+  "raw_quality_records": [
+    {
+      "source_LF_line": 7,
+      "source_record_line_sha256": "e036e1fe59f1d4736f6934ca800e5bd45944f59b9c5f87cb87941d18e999ee89",
+      "source_total_JSONL_records": 150,
+      "record": {
+        "position_key": "brightpro:biology:11|hybrid_instruction",
+        "query_id": "brightpro:biology:11",
+        "route": "quality",
+        "condition": "hybrid_instruction",
+        "input_sha256": "15c872883b655d037d850097352e11841c7c3f012da607c218e663f61946638d",
+        "answer_sha256": "9bb8dd6e34e36c3fcd8f26da52e1e4f2473a6bc52c9a8ca9157f360da5999282",
+        "reference_sha256": "54bb0a29e96a322cee424e9d0793d29635956311f42af43ceeed9c9f379f17e9",
+        "context_sha256": "f1f794a64b58cb5624ee9a27bd7a40940e449be88cf2e489de66e5c30acd7903",
+        "system_prompt": "You are a meticulous evaluation assistant in a research study on retrieval-augmented question answering. You judge one answer at a time against a reference answer and a fixed list of required aspects. You output ONLY one JSON object: no markdown fences, no extra text.",
+        "parsed": {
+          "aspect_completion": {
+            "F01": 0,
+            "F02": 0,
+            "F03": 0.5,
+            "F04": 0
+          },
+          "aspect_notes": {
+            "F01": "No mention of tricarpellate gynoecium or three carpels.",
+            "F02": "No mention of carpel fusion or longitudinal ridges.",
+            "F03": "Mentions three pores/spots but not their correspondence to carpels.",
+            "F04": "No mention of two sealed pores and one germination pore."
+          },
+          "correctness_0_4": 1,
+          "correctness_reason": "Answer denies biological explanation and omits all developmental carpel-based reasoning, though it notes three pores."
+        },
+        "created_utc": "2026-10-06T11:53:33Z",
+        "request_params": {
+          "model": "deepseek-flash",
+          "max_tokens": 1536,
+          "temperature": 0,
+          "reasoning": "off",
+          "reasoning_effort": null,
+          "thinking": {
+            "type": "disabled"
+          }
+        },
+        "status": "ok",
+        "response_model": "deepseek-flash"
+      },
+      "excluded_records": 149,
+      "excluded_pct": 99.33333333333333
+    },
+    {
+      "source_LF_line": 70,
+      "source_record_line_sha256": "757fc86b959f7ef60021f3cd8cb845ce65636d5b9199a01fdb6802d1cc7df129",
+      "source_total_JSONL_records": 150,
+      "record": {
+        "position_key": "brightpro:biology:11|hybrid_instruction_selection",
+        "query_id": "brightpro:biology:11",
+        "route": "quality",
+        "condition": "hybrid_instruction_selection",
+        "input_sha256": "15c872883b655d037d850097352e11841c7c3f012da607c218e663f61946638d",
+        "answer_sha256": "9bb8dd6e34e36c3fcd8f26da52e1e4f2473a6bc52c9a8ca9157f360da5999282",
+        "reference_sha256": "54bb0a29e96a322cee424e9d0793d29635956311f42af43ceeed9c9f379f17e9",
+        "context_sha256": "f1f794a64b58cb5624ee9a27bd7a40940e449be88cf2e489de66e5c30acd7903",
+        "system_prompt": "You are a meticulous evaluation assistant in a research study on retrieval-augmented question answering. You judge one answer at a time against a reference answer and a fixed list of required aspects. You output ONLY one JSON object: no markdown fences, no extra text.",
+        "parsed": {
+          "aspect_completion": {
+            "F01": 0,
+            "F02": 0,
+            "F03": 0.5,
+            "F04": 0
+          },
+          "aspect_notes": {
+            "F01": "No mention of tricarpellate gynoecium or three carpels.",
+            "F02": "No mention of carpel fusion or longitudinal ridges.",
+            "F03": "Mentions three pores/spots but not their correspondence to carpels.",
+            "F04": "No mention of two sealed pores and one germination pore."
+          },
+          "correctness_0_4": 1,
+          "correctness_reason": "Answer denies biological explanation and omits all developmental carpel-based reasoning, though it notes three pores."
+        },
+        "created_utc": "2026-10-06T11:53:33Z",
+        "request_params": {
+          "model": "deepseek-flash",
+          "max_tokens": 1536,
+          "temperature": 0,
+          "reasoning": "off",
+          "reasoning_effort": null,
+          "thinking": {
+            "type": "disabled"
+          }
+        },
+        "status": "ok",
+        "response_model": "deepseek-flash",
+        "eval_source": "dedup_same_input_within_run",
+        "shared_with_position_key": "brightpro:biology:11|hybrid_instruction"
+      },
+      "excluded_records": 149,
+      "excluded_pct": 99.33333333333333
+    }
+  ],
+  "note": "Original model judgments, not new human adjudication. Source record text is an allowlisted excerpt; source file hashes preserve lineage."
+}

@@ -1,0 +1,82 @@
+{
+  "dataset": {
+    "name": "yale-nlp/Bright-Pro",
+    "dataset_revision": "dbdc22babbef310210e267b99249e7cec86d5edf",
+    "code_commit": "5df9e9baf5a0525a2b962d73f213c9dee63c5f3e"
+  },
+  "text_unit": {
+    "window_bge_tokens": 448,
+    "overlap_bge_tokens": 64,
+    "stride_bge_tokens": 384,
+    "max_with_special_tokens": 512,
+    "slicing": "原文 offset 取子串；词边界对齐；不用 decode 文本当原文",
+    "parent_doc_fallback": "不足一窗的文档整篇为 1 片"
+  },
+  "backends": {
+    "bm25": {
+      "library": "bm25s",
+      "library_version": "0.3.12",
+      "variant": "lucene",
+      "k1": 1.2,
+      "b": 0.75,
+      "tokenizer": "bm25s.Tokenizer(lower=True, splitter=r'(?u)\\b\\w\\w+\\b', stopwords='english', stemmer=None)",
+      "note": "bm25s 默认 k1=1.5，必须显式传 k1=1.2；不同库默认值不得混称同一种 BM25"
+    },
+    "dense": {
+      "model_id": "BAAI/bge-small-en-v1.5",
+      "model_revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+      "dim": 384,
+      "pooling": "cls",
+      "normalize": true,
+      "query_instruction": "Represent this sentence for searching relevant passages: ",
+      "device": "cuda",
+      "parent_score_rule": "父文档分数 = 该父文档所有片段中的最高分；必须分块扫描全部向量取 max，不得只取片段 top-k"
+    },
+    "hybrid": {
+      "fusion": "RRF",
+      "rrf_constant": 60,
+      "weight": "等权（BM25 与 Dense 各 1）",
+      "not_in_pool_score": 0,
+      "fusion_level": "父文档排名"
+    }
+  },
+  "historical_input_budget": "Phase2 initially 4096 BGE tokens; Phase3 16000 UTF-8 bytes including headers/separators; sensitivity32000 bytes. Not verified generator tokens.",
+  "independent_checker_request_parameters": {
+    "model": "deepseek-flash",
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 1536,
+    "thinking": {
+      "type": "disabled"
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "independent_max_attempts_per_contract": 3,
+  "semantic_unknown_retry": false,
+  "route": {
+    "scheme": "https",
+    "host": "api.deepseek.com",
+    "port": 443,
+    "base_url": "https://api.deepseek.com/v1",
+    "method": "POST",
+    "exact_url": "https://api.deepseek.com/v1/chat/completions",
+    "trust_env": false,
+    "follow_redirects": false
+  },
+  "route_addendum_utc": "2026-10-10T07:12:49.518756+00:00",
+  "route_deviation": "Original measurement freeze fixed host via shared dependency but not exact path/port. This supplements route after semantic release, before first HTTP; no backdated pre-semantic claim. Original semantic protocol, selection and outputs preserved.",
+  "paired_selection_prediction": {
+    "kind": "two-sided query-block sign-flip",
+    "resamples": 9999,
+    "seed": 20261008,
+    "p_rule": "(n_extreme+1)/(resamples+1)"
+  },
+  "association": {
+    "kind": "two-sided within-domain query permutation",
+    "n_perm": 10000,
+    "seed": "rev7-perm-20261008"
+  },
+  "model_version_boundary": "Requested alias deepseek-flash; role register reported DeepSeek-V4.1-Flash; immutable provider weights not independently verified."
+}

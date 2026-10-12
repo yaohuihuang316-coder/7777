@@ -1,0 +1,10 @@
+{
+  "tag": "posthoc_repair",
+  "rule": "受影响位置 = 重算 W_S_lb 与已发布差 > 1e−12，或 correctness_0_4 与自身记录不同。",
+  "n_affected": 56,
+  "n_by_kind": {
+    "w_s_lb_changed": 38,
+    "correctness_changed": 56
+  },
+  "n_all_positions": 700
+}

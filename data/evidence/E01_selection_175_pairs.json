@@ -1,0 +1,1743 @@
+{
+  "endpoint": "query_mean(W_S_lb_intervention − W_S_lb_baseline) 及其三个同构列",
+  "n_queries": 175,
+  "subset_definition": "same_context＝该 query 的干预与基线 pack.context_sha256 逐字节相同（54 个）；其余 121 个为输入改变位置。",
+  "columns": {
+    "original_a3": {
+      "label": "原 a3（labels.w_s_lb 干预−基线，S9 原主族 P-01 口径）",
+      "family": {
+        "family": "原主族 P-01（已发布，本步只复述与复查）",
+        "exploratory": false
+      },
+      "all_175": {
+        "n": 175,
+        "mean": 0.045277230705802134,
+        "median": 0.0,
+        "sd": 0.1707789898526541,
+        "min": -0.5,
+        "max": 0.7272727272727273,
+        "n_pos": 66,
+        "n_neg": 31,
+        "n_zero": 78,
+        "permutation": {
+          "p_value": 0.0002,
+          "observed_mean": 0.045277230705802134,
+          "n_extreme": 1,
+          "resamples": 9999,
+          "seed": 20261008
+        },
+        "sign_test": {
+          "n_pos": 66,
+          "n_neg": 31,
+          "n_nonzero": 97,
+          "p_value": 0.0004901579489633008
+        }
+      },
+      "same_context_54": {
+        "n": 54,
+        "mean": 0.16351840032395587,
+        "median": 0.13068181818181818,
+        "sd": 0.16878286975138723,
+        "min": -0.05555555555555547,
+        "max": 0.7272727272727273,
+        "n_pos": 37,
+        "n_neg": 1,
+        "n_zero": 16,
+        "permutation": {
+          "p_value": 0.0001,
+          "observed_mean": 0.16351840032395587,
+          "n_extreme": 0,
+          "resamples": 9999,
+          "seed": 20261008
+        },
+        "sign_test": {
+          "n_pos": 37,
+          "n_neg": 1,
+          "n_nonzero": 38,
+          "p_value": 2.837623469531536e-10
+        }
+      },
+      "changed_context_121": {
+        "n": 121,
+        "mean": -0.00749155573535739,
+        "median": 0.0,
+        "sd": 0.14355725541581602,
+        "min": -0.5,
+        "max": 0.5,
+        "n_pos": 29,
+        "n_neg": 30,
+        "n_zero": 62,
+        "permutation": {
+          "p_value": 0.5757,
+          "observed_mean": -0.00749155573535739,
+          "n_extreme": 5756,
+          "resamples": 9999,
+          "seed": 20261008
+        },
+        "sign_test": {
+          "n_pos": 29,
+          "n_neg": 30,
+          "n_nonzero": 59,
+          "p_value": 1.0
+        }
+      }
+    },
+    "repaired_a3": {
+      "label": "新同尺度版本（same_context_recompute_v1.json 的确定性纠错重算，干预−基线）",
+      "family": {
+        "family": "新增测量分析（探索族）",
+        "exploratory": true
+      },
+      "all_175": {
+        "n": 175,
+        "mean": -0.004213064713064714,
+        "median": 0.0,
+        "sd": 0.12042200956081316,
+        "min": -0.5,
+        "max": 0.5,
+        "n_pos": 31,
+        "n_neg": 31,
+        "n_zero": 113,
+        "permutation": {
+          "p_value": 0.6471,
+          "observed_mean": -0.004213064713064714,
+          "n_extreme": 6470,
+          "resamples": 9999,
+          "seed": 20261008
+        },
+        "sign_test": {
+          "n_pos": 31,
+          "n_neg": 31,
+          "n_nonzero": 62,
+          "p_value": 1.0
+        }
+      },
+      "same_context_54": {
+        "n": 54,
+        "mean": -0.0014964459408903846,
+        "median": 0.0,
+        "sd": 0.025293080254096843,
+        "min": -0.13636363636363635,
+        "max": 0.11111111111111105,
+        "n_pos": 1,
+        "n_neg": 2,
+        "n_zero": 51,
+        "permutation": {
+          "p_value": 0.7538,
+          "observed_mean": -0.0014964459408903846,
+          "n_extreme": 7537,
+          "resamples": 9999,
+          "seed": 20261008
+        },
+        "sign_test": {
+          "n_pos": 1,
+          "n_neg": 2,
+          "n_nonzero": 3,
+          "p_value": 1.0
+        }
+      },
+      "changed_context_121": {
+        "n": 121,
+        "mean": -0.005425440032878051,
+        "median": 0.0,
+        "sd": 0.14401306418877072,
+        "min": -0.5,
+        "max": 0.5,
+        "n_pos": 30,
+        "n_neg": 29,
+        "n_zero": 62,
+        "permutation": {
+          "p_value": 0.6814,
+          "observed_mean": -0.005425440032878051,
+          "n_extreme": 6813,
+          "resamples": 9999,
+          "seed": 20261008
+        },
+        "sign_test": {
+          "n_pos": 30,
+          "n_neg": 29,
+          "n_nonzero": 59,
+          "p_value": 1.0
+        }
+      }
+    }
+  },
+  "per_query": [
+    {
+      "query_id": "brightpro:biology:100",
+      "domain": "biology",
+      "same_context": false,
+      "delta_original_a3": -0.2142857142857143,
+      "delta_original_binary": -0.4285714285714286,
+      "delta_original_upper": -0.4285714285714286,
+      "delta_repaired_a3": -0.2142857142857143
+    },
+    {
+      "query_id": "brightpro:biology:11",
+      "domain": "biology",
+      "same_context": true,
+      "delta_original_a3": 0.1,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:biology:13",
+      "domain": "biology",
+      "same_context": true,
+      "delta_original_a3": 0.23076923076923078,
+      "delta_original_binary": 0.23076923076923078,
+      "delta_original_upper": 0.23076923076923078,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:biology:14",
+      "domain": "biology",
+      "same_context": true,
+      "delta_original_a3": 0.25,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:biology:17",
+      "domain": "biology",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": -0.375,
+      "delta_original_upper": -0.375,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:biology:25",
+      "domain": "biology",
+      "same_context": false,
+      "delta_original_a3": 0.14999999999999997,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.14999999999999997
+    },
+    {
+      "query_id": "brightpro:biology:27",
+      "domain": "biology",
+      "same_context": false,
+      "delta_original_a3": -0.15000000000000002,
+      "delta_original_binary": -0.30000000000000004,
+      "delta_original_upper": -0.30000000000000004,
+      "delta_repaired_a3": -0.15000000000000002
+    },
+    {
+      "query_id": "brightpro:biology:28",
+      "domain": "biology",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:biology:29",
+      "domain": "biology",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": -1.0,
+      "delta_original_upper": -1.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:biology:3",
+      "domain": "biology",
+      "same_context": false,
+      "delta_original_a3": -0.09999999999999998,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.15000000000000002
+    },
+    {
+      "query_id": "brightpro:biology:31",
+      "domain": "biology",
+      "same_context": true,
+      "delta_original_a3": 0.18181818181818188,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:biology:35",
+      "domain": "biology",
+      "same_context": false,
+      "delta_original_a3": -0.2727272727272727,
+      "delta_original_binary": -0.7272727272727273,
+      "delta_original_upper": -0.7272727272727273,
+      "delta_repaired_a3": -0.2727272727272727
+    },
+    {
+      "query_id": "brightpro:biology:4",
+      "domain": "biology",
+      "same_context": false,
+      "delta_original_a3": 0.11111111111111105,
+      "delta_original_binary": 0.2222222222222222,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.11111111111111105
+    },
+    {
+      "query_id": "brightpro:biology:54",
+      "domain": "biology",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:biology:64",
+      "domain": "biology",
+      "same_context": true,
+      "delta_original_a3": 0.2222222222222222,
+      "delta_original_binary": 0.2222222222222222,
+      "delta_original_upper": 0.2222222222222222,
+      "delta_repaired_a3": 0.11111111111111105
+    },
+    {
+      "query_id": "brightpro:biology:69",
+      "domain": "biology",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:biology:71",
+      "domain": "biology",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:biology:75",
+      "domain": "biology",
+      "same_context": true,
+      "delta_original_a3": -0.05555555555555547,
+      "delta_original_binary": -0.11111111111111105,
+      "delta_original_upper": -0.11111111111111105,
+      "delta_repaired_a3": -0.05555555555555547
+    },
+    {
+      "query_id": "brightpro:biology:77",
+      "domain": "biology",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:biology:81",
+      "domain": "biology",
+      "same_context": false,
+      "delta_original_a3": -0.5,
+      "delta_original_binary": -0.5454545454545454,
+      "delta_original_upper": -0.5454545454545454,
+      "delta_repaired_a3": -0.5
+    },
+    {
+      "query_id": "brightpro:biology:86",
+      "domain": "biology",
+      "same_context": false,
+      "delta_original_a3": 0.13636363636363635,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.13636363636363635
+    },
+    {
+      "query_id": "brightpro:biology:90",
+      "domain": "biology",
+      "same_context": false,
+      "delta_original_a3": -0.08333333333333331,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": -0.08333333333333331
+    },
+    {
+      "query_id": "brightpro:biology:92",
+      "domain": "biology",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:biology:94",
+      "domain": "biology",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:biology:99",
+      "domain": "biology",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:earth_science:0",
+      "domain": "earth_science",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.2,
+      "delta_original_upper": 0.2,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:earth_science:100",
+      "domain": "earth_science",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:earth_science:104",
+      "domain": "earth_science",
+      "same_context": false,
+      "delta_original_a3": 0.25,
+      "delta_original_binary": 0.25,
+      "delta_original_upper": 0.25,
+      "delta_repaired_a3": 0.25
+    },
+    {
+      "query_id": "brightpro:earth_science:107",
+      "domain": "earth_science",
+      "same_context": false,
+      "delta_original_a3": -0.25,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": -0.25
+    },
+    {
+      "query_id": "brightpro:earth_science:11",
+      "domain": "earth_science",
+      "same_context": true,
+      "delta_original_a3": 0.09999999999999998,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:earth_science:113",
+      "domain": "earth_science",
+      "same_context": true,
+      "delta_original_a3": 0.3333333333333333,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:earth_science:12",
+      "domain": "earth_science",
+      "same_context": true,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:earth_science:13",
+      "domain": "earth_science",
+      "same_context": false,
+      "delta_original_a3": -0.2727272727272727,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": -0.2727272727272727
+    },
+    {
+      "query_id": "brightpro:earth_science:19",
+      "domain": "earth_science",
+      "same_context": true,
+      "delta_original_a3": 0.44999999999999996,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:earth_science:20",
+      "domain": "earth_science",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:earth_science:27",
+      "domain": "earth_science",
+      "same_context": false,
+      "delta_original_a3": -0.09090909090909094,
+      "delta_original_binary": -0.18181818181818188,
+      "delta_original_upper": -0.18181818181818188,
+      "delta_repaired_a3": -0.09090909090909094
+    },
+    {
+      "query_id": "brightpro:earth_science:28",
+      "domain": "earth_science",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:earth_science:35",
+      "domain": "earth_science",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.2727272727272727,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:earth_science:43",
+      "domain": "earth_science",
+      "same_context": true,
+      "delta_original_a3": 0.11111111111111116,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:earth_science:45",
+      "domain": "earth_science",
+      "same_context": false,
+      "delta_original_a3": -0.2857142857142857,
+      "delta_original_binary": -0.2857142857142858,
+      "delta_original_upper": -0.2857142857142858,
+      "delta_repaired_a3": -0.2857142857142857
+    },
+    {
+      "query_id": "brightpro:earth_science:48",
+      "domain": "earth_science",
+      "same_context": false,
+      "delta_original_a3": 0.10000000000000009,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.10000000000000009
+    },
+    {
+      "query_id": "brightpro:earth_science:53",
+      "domain": "earth_science",
+      "same_context": false,
+      "delta_original_a3": 0.13636363636363635,
+      "delta_original_binary": 0.2727272727272727,
+      "delta_original_upper": 0.2727272727272727,
+      "delta_repaired_a3": 0.13636363636363635
+    },
+    {
+      "query_id": "brightpro:earth_science:54",
+      "domain": "earth_science",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:earth_science:57",
+      "domain": "earth_science",
+      "same_context": true,
+      "delta_original_a3": 0.2222222222222221,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:earth_science:70",
+      "domain": "earth_science",
+      "same_context": false,
+      "delta_original_a3": -0.20000000000000007,
+      "delta_original_binary": -0.4,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": -0.20000000000000007
+    },
+    {
+      "query_id": "brightpro:earth_science:76",
+      "domain": "earth_science",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:earth_science:84",
+      "domain": "earth_science",
+      "same_context": true,
+      "delta_original_a3": 0.19999999999999996,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:earth_science:90",
+      "domain": "earth_science",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:earth_science:92",
+      "domain": "earth_science",
+      "same_context": true,
+      "delta_original_a3": 0.2777777777777778,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:earth_science:98",
+      "domain": "earth_science",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:economics:10",
+      "domain": "economics",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:economics:12",
+      "domain": "economics",
+      "same_context": false,
+      "delta_original_a3": -0.050000000000000044,
+      "delta_original_binary": -0.30000000000000004,
+      "delta_original_upper": -0.30000000000000004,
+      "delta_repaired_a3": -0.050000000000000044
+    },
+    {
+      "query_id": "brightpro:economics:15",
+      "domain": "economics",
+      "same_context": true,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:economics:24",
+      "domain": "economics",
+      "same_context": false,
+      "delta_original_a3": -0.04545454545454547,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": -0.04545454545454547
+    },
+    {
+      "query_id": "brightpro:economics:29",
+      "domain": "economics",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:economics:33",
+      "domain": "economics",
+      "same_context": true,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:economics:37",
+      "domain": "economics",
+      "same_context": true,
+      "delta_original_a3": 0.10000000000000009,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:economics:44",
+      "domain": "economics",
+      "same_context": true,
+      "delta_original_a3": 0.13636363636363635,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:economics:46",
+      "domain": "economics",
+      "same_context": true,
+      "delta_original_a3": 0.7272727272727273,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:economics:48",
+      "domain": "economics",
+      "same_context": false,
+      "delta_original_a3": -0.2727272727272727,
+      "delta_original_binary": -0.2727272727272727,
+      "delta_original_upper": -0.2727272727272727,
+      "delta_repaired_a3": -0.2727272727272727
+    },
+    {
+      "query_id": "brightpro:economics:5",
+      "domain": "economics",
+      "same_context": false,
+      "delta_original_a3": -0.15,
+      "delta_original_binary": 0.2,
+      "delta_original_upper": 0.2,
+      "delta_repaired_a3": -0.15
+    },
+    {
+      "query_id": "brightpro:economics:58",
+      "domain": "economics",
+      "same_context": true,
+      "delta_original_a3": 0.2857142857142857,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:economics:70",
+      "domain": "economics",
+      "same_context": false,
+      "delta_original_a3": -0.1875,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": -0.1875
+    },
+    {
+      "query_id": "brightpro:economics:73",
+      "domain": "economics",
+      "same_context": true,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:economics:76",
+      "domain": "economics",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:economics:8",
+      "domain": "economics",
+      "same_context": false,
+      "delta_original_a3": -0.4375,
+      "delta_original_binary": -0.125,
+      "delta_original_upper": -0.125,
+      "delta_repaired_a3": -0.4375
+    },
+    {
+      "query_id": "brightpro:economics:80",
+      "domain": "economics",
+      "same_context": true,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:economics:82",
+      "domain": "economics",
+      "same_context": true,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:economics:83",
+      "domain": "economics",
+      "same_context": false,
+      "delta_original_a3": -0.25,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": -0.25
+    },
+    {
+      "query_id": "brightpro:economics:88",
+      "domain": "economics",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:economics:90",
+      "domain": "economics",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:economics:92",
+      "domain": "economics",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": -0.19999999999999996,
+      "delta_original_upper": -0.19999999999999996,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:economics:93",
+      "domain": "economics",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:economics:96",
+      "domain": "economics",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:economics:99",
+      "domain": "economics",
+      "same_context": false,
+      "delta_original_a3": -0.05555555555555555,
+      "delta_original_binary": -0.2222222222222222,
+      "delta_original_upper": -0.2222222222222222,
+      "delta_repaired_a3": -0.05555555555555555
+    },
+    {
+      "query_id": "brightpro:psychology:20",
+      "domain": "psychology",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": -0.25,
+      "delta_original_upper": -0.25,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:psychology:21",
+      "domain": "psychology",
+      "same_context": true,
+      "delta_original_a3": 0.09999999999999998,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:psychology:26",
+      "domain": "psychology",
+      "same_context": true,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:psychology:28",
+      "domain": "psychology",
+      "same_context": false,
+      "delta_original_a3": 0.13636363636363635,
+      "delta_original_binary": 0.2727272727272727,
+      "delta_original_upper": 0.2727272727272727,
+      "delta_repaired_a3": 0.13636363636363635
+    },
+    {
+      "query_id": "brightpro:psychology:31",
+      "domain": "psychology",
+      "same_context": false,
+      "delta_original_a3": -0.22222222222222227,
+      "delta_original_binary": -0.22222222222222227,
+      "delta_original_upper": -0.22222222222222227,
+      "delta_repaired_a3": -0.22222222222222227
+    },
+    {
+      "query_id": "brightpro:psychology:34",
+      "domain": "psychology",
+      "same_context": true,
+      "delta_original_a3": 0.41666666666666663,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:psychology:35",
+      "domain": "psychology",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:psychology:45",
+      "domain": "psychology",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:psychology:46",
+      "domain": "psychology",
+      "same_context": true,
+      "delta_original_a3": 0.2222222222222221,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:psychology:47",
+      "domain": "psychology",
+      "same_context": false,
+      "delta_original_a3": 0.09090909090909088,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.09090909090909088
+    },
+    {
+      "query_id": "brightpro:psychology:48",
+      "domain": "psychology",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:psychology:58",
+      "domain": "psychology",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:psychology:59",
+      "domain": "psychology",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:psychology:68",
+      "domain": "psychology",
+      "same_context": false,
+      "delta_original_a3": -0.125,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": -0.125
+    },
+    {
+      "query_id": "brightpro:psychology:71",
+      "domain": "psychology",
+      "same_context": true,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:psychology:77",
+      "domain": "psychology",
+      "same_context": false,
+      "delta_original_a3": -0.16666666666666663,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": -0.16666666666666663
+    },
+    {
+      "query_id": "brightpro:psychology:81",
+      "domain": "psychology",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:psychology:82",
+      "domain": "psychology",
+      "same_context": true,
+      "delta_original_a3": 0.15000000000000002,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:psychology:85",
+      "domain": "psychology",
+      "same_context": false,
+      "delta_original_a3": -0.09999999999999998,
+      "delta_original_binary": -0.20000000000000007,
+      "delta_original_upper": -0.20000000000000007,
+      "delta_repaired_a3": -0.09999999999999998
+    },
+    {
+      "query_id": "brightpro:psychology:87",
+      "domain": "psychology",
+      "same_context": false,
+      "delta_original_a3": 0.11538461538461536,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.11538461538461536
+    },
+    {
+      "query_id": "brightpro:psychology:89",
+      "domain": "psychology",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:psychology:9",
+      "domain": "psychology",
+      "same_context": true,
+      "delta_original_a3": 0.0625,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:psychology:90",
+      "domain": "psychology",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:psychology:96",
+      "domain": "psychology",
+      "same_context": false,
+      "delta_original_a3": -0.13636363636363635,
+      "delta_original_binary": -0.2727272727272727,
+      "delta_original_upper": -0.2727272727272727,
+      "delta_repaired_a3": -0.13636363636363635
+    },
+    {
+      "query_id": "brightpro:psychology:98",
+      "domain": "psychology",
+      "same_context": true,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:robotics:17",
+      "domain": "robotics",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:robotics:18",
+      "domain": "robotics",
+      "same_context": false,
+      "delta_original_a3": -0.38461538461538464,
+      "delta_original_binary": -0.5384615384615384,
+      "delta_original_upper": -0.5384615384615384,
+      "delta_repaired_a3": -0.38461538461538464
+    },
+    {
+      "query_id": "brightpro:robotics:27",
+      "domain": "robotics",
+      "same_context": true,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": -0.2,
+      "delta_original_upper": -0.2,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:robotics:29",
+      "domain": "robotics",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.375,
+      "delta_original_upper": 0.375,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:robotics:31",
+      "domain": "robotics",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:robotics:33",
+      "domain": "robotics",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:robotics:34",
+      "domain": "robotics",
+      "same_context": false,
+      "delta_original_a3": 0.16666666666666666,
+      "delta_original_binary": 0.3333333333333333,
+      "delta_original_upper": 0.3333333333333333,
+      "delta_repaired_a3": 0.16666666666666666
+    },
+    {
+      "query_id": "brightpro:robotics:4",
+      "domain": "robotics",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:robotics:40",
+      "domain": "robotics",
+      "same_context": false,
+      "delta_original_a3": -0.18181818181818182,
+      "delta_original_binary": -0.18181818181818182,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": -0.18181818181818182
+    },
+    {
+      "query_id": "brightpro:robotics:41",
+      "domain": "robotics",
+      "same_context": true,
+      "delta_original_a3": 0.125,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:robotics:50",
+      "domain": "robotics",
+      "same_context": false,
+      "delta_original_a3": -0.1875,
+      "delta_original_binary": -0.375,
+      "delta_original_upper": -0.375,
+      "delta_repaired_a3": -0.1875
+    },
+    {
+      "query_id": "brightpro:robotics:51",
+      "domain": "robotics",
+      "same_context": true,
+      "delta_original_a3": 0.18181818181818182,
+      "delta_original_binary": -0.09090909090909088,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": -0.13636363636363635
+    },
+    {
+      "query_id": "brightpro:robotics:58",
+      "domain": "robotics",
+      "same_context": false,
+      "delta_original_a3": 0.3,
+      "delta_original_binary": 0.7,
+      "delta_original_upper": 0.7,
+      "delta_repaired_a3": 0.3
+    },
+    {
+      "query_id": "brightpro:robotics:63",
+      "domain": "robotics",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:robotics:68",
+      "domain": "robotics",
+      "same_context": true,
+      "delta_original_a3": 0.15,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:robotics:7",
+      "domain": "robotics",
+      "same_context": false,
+      "delta_original_a3": 0.2,
+      "delta_original_binary": 0.4,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.2
+    },
+    {
+      "query_id": "brightpro:robotics:71",
+      "domain": "robotics",
+      "same_context": true,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:robotics:72",
+      "domain": "robotics",
+      "same_context": true,
+      "delta_original_a3": 0.15000000000000002,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:robotics:8",
+      "domain": "robotics",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:robotics:82",
+      "domain": "robotics",
+      "same_context": false,
+      "delta_original_a3": 0.5,
+      "delta_original_binary": 0.375,
+      "delta_original_upper": 0.375,
+      "delta_repaired_a3": 0.5
+    },
+    {
+      "query_id": "brightpro:robotics:83",
+      "domain": "robotics",
+      "same_context": false,
+      "delta_original_a3": 0.15,
+      "delta_original_binary": 0.49999999999999994,
+      "delta_original_upper": 0.19999999999999996,
+      "delta_repaired_a3": 0.15
+    },
+    {
+      "query_id": "brightpro:robotics:87",
+      "domain": "robotics",
+      "same_context": true,
+      "delta_original_a3": 0.25,
+      "delta_original_binary": -0.5,
+      "delta_original_upper": -0.5,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:robotics:90",
+      "domain": "robotics",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:robotics:94",
+      "domain": "robotics",
+      "same_context": false,
+      "delta_original_a3": 0.11111111111111105,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.11111111111111105
+    },
+    {
+      "query_id": "brightpro:robotics:98",
+      "domain": "robotics",
+      "same_context": true,
+      "delta_original_a3": 0.1,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:stackoverflow:113",
+      "domain": "stackoverflow",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:stackoverflow:114",
+      "domain": "stackoverflow",
+      "same_context": true,
+      "delta_original_a3": 0.4375,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:stackoverflow:12",
+      "domain": "stackoverflow",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:stackoverflow:15",
+      "domain": "stackoverflow",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:stackoverflow:18",
+      "domain": "stackoverflow",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:stackoverflow:20",
+      "domain": "stackoverflow",
+      "same_context": true,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:stackoverflow:21",
+      "domain": "stackoverflow",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:stackoverflow:29",
+      "domain": "stackoverflow",
+      "same_context": false,
+      "delta_original_a3": -0.05555555555555555,
+      "delta_original_binary": -0.1111111111111111,
+      "delta_original_upper": -0.3333333333333333,
+      "delta_repaired_a3": -0.05555555555555555
+    },
+    {
+      "query_id": "brightpro:stackoverflow:34",
+      "domain": "stackoverflow",
+      "same_context": false,
+      "delta_original_a3": 0.16666666666666663,
+      "delta_original_binary": 0.33333333333333326,
+      "delta_original_upper": 0.33333333333333326,
+      "delta_repaired_a3": 0.16666666666666663
+    },
+    {
+      "query_id": "brightpro:stackoverflow:47",
+      "domain": "stackoverflow",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:stackoverflow:49",
+      "domain": "stackoverflow",
+      "same_context": false,
+      "delta_original_a3": -0.2222222222222221,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": -0.2222222222222221
+    },
+    {
+      "query_id": "brightpro:stackoverflow:50",
+      "domain": "stackoverflow",
+      "same_context": false,
+      "delta_original_a3": 0.09999999999999998,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.09999999999999998
+    },
+    {
+      "query_id": "brightpro:stackoverflow:52",
+      "domain": "stackoverflow",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:stackoverflow:55",
+      "domain": "stackoverflow",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:stackoverflow:64",
+      "domain": "stackoverflow",
+      "same_context": true,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:stackoverflow:66",
+      "domain": "stackoverflow",
+      "same_context": true,
+      "delta_original_a3": 0.11111111111111116,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:stackoverflow:7",
+      "domain": "stackoverflow",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:stackoverflow:75",
+      "domain": "stackoverflow",
+      "same_context": false,
+      "delta_original_a3": 0.2727272727272727,
+      "delta_original_binary": 0.2727272727272727,
+      "delta_original_upper": 0.2727272727272727,
+      "delta_repaired_a3": 0.2727272727272727
+    },
+    {
+      "query_id": "brightpro:stackoverflow:77",
+      "domain": "stackoverflow",
+      "same_context": false,
+      "delta_original_a3": 0.09999999999999998,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.09999999999999998
+    },
+    {
+      "query_id": "brightpro:stackoverflow:81",
+      "domain": "stackoverflow",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:stackoverflow:88",
+      "domain": "stackoverflow",
+      "same_context": true,
+      "delta_original_a3": 0.125,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:stackoverflow:9",
+      "domain": "stackoverflow",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:stackoverflow:95",
+      "domain": "stackoverflow",
+      "same_context": false,
+      "delta_original_a3": 0.1875,
+      "delta_original_binary": 0.375,
+      "delta_original_upper": 0.375,
+      "delta_repaired_a3": 0.1875
+    },
+    {
+      "query_id": "brightpro:stackoverflow:96",
+      "domain": "stackoverflow",
+      "same_context": false,
+      "delta_original_a3": -0.08333333333333333,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": -0.08333333333333333
+    },
+    {
+      "query_id": "brightpro:stackoverflow:98",
+      "domain": "stackoverflow",
+      "same_context": true,
+      "delta_original_a3": 0.3125,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:sustainable_living:0",
+      "domain": "sustainable_living",
+      "same_context": true,
+      "delta_original_a3": 0.22727272727272727,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:sustainable_living:1",
+      "domain": "sustainable_living",
+      "same_context": false,
+      "delta_original_a3": 0.05,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.05
+    },
+    {
+      "query_id": "brightpro:sustainable_living:100",
+      "domain": "sustainable_living",
+      "same_context": true,
+      "delta_original_a3": 0.4545454545454546,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:sustainable_living:102",
+      "domain": "sustainable_living",
+      "same_context": false,
+      "delta_original_a3": 0.09999999999999998,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.09999999999999998
+    },
+    {
+      "query_id": "brightpro:sustainable_living:13",
+      "domain": "sustainable_living",
+      "same_context": false,
+      "delta_original_a3": 0.09999999999999998,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.09999999999999998
+    },
+    {
+      "query_id": "brightpro:sustainable_living:14",
+      "domain": "sustainable_living",
+      "same_context": true,
+      "delta_original_a3": 0.6363636363636364,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:sustainable_living:20",
+      "domain": "sustainable_living",
+      "same_context": true,
+      "delta_original_a3": 0.2777777777777778,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:sustainable_living:22",
+      "domain": "sustainable_living",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:sustainable_living:32",
+      "domain": "sustainable_living",
+      "same_context": false,
+      "delta_original_a3": 0.1875,
+      "delta_original_binary": 0.375,
+      "delta_original_upper": 0.375,
+      "delta_repaired_a3": 0.1875
+    },
+    {
+      "query_id": "brightpro:sustainable_living:33",
+      "domain": "sustainable_living",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:sustainable_living:34",
+      "domain": "sustainable_living",
+      "same_context": false,
+      "delta_original_a3": 0.13636363636363635,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.13636363636363635
+    },
+    {
+      "query_id": "brightpro:sustainable_living:37",
+      "domain": "sustainable_living",
+      "same_context": false,
+      "delta_original_a3": 0.2222222222222222,
+      "delta_original_binary": 0.22222222222222232,
+      "delta_original_upper": 0.22222222222222232,
+      "delta_repaired_a3": 0.2222222222222222
+    },
+    {
+      "query_id": "brightpro:sustainable_living:43",
+      "domain": "sustainable_living",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:sustainable_living:55",
+      "domain": "sustainable_living",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:sustainable_living:58",
+      "domain": "sustainable_living",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:sustainable_living:59",
+      "domain": "sustainable_living",
+      "same_context": true,
+      "delta_original_a3": 0.30000000000000004,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:sustainable_living:64",
+      "domain": "sustainable_living",
+      "same_context": false,
+      "delta_original_a3": 0.20000000000000007,
+      "delta_original_binary": 0.19999999999999996,
+      "delta_original_upper": 0.19999999999999996,
+      "delta_repaired_a3": 0.20000000000000007
+    },
+    {
+      "query_id": "brightpro:sustainable_living:67",
+      "domain": "sustainable_living",
+      "same_context": false,
+      "delta_original_a3": 0.19999999999999996,
+      "delta_original_binary": 0.19999999999999996,
+      "delta_original_upper": 0.19999999999999996,
+      "delta_repaired_a3": 0.19999999999999996
+    },
+    {
+      "query_id": "brightpro:sustainable_living:68",
+      "domain": "sustainable_living",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.2,
+      "delta_original_upper": 0.2,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:sustainable_living:70",
+      "domain": "sustainable_living",
+      "same_context": false,
+      "delta_original_a3": 0.15000000000000002,
+      "delta_original_binary": 0.30000000000000004,
+      "delta_original_upper": 0.30000000000000004,
+      "delta_repaired_a3": 0.15000000000000002
+    },
+    {
+      "query_id": "brightpro:sustainable_living:80",
+      "domain": "sustainable_living",
+      "same_context": true,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:sustainable_living:82",
+      "domain": "sustainable_living",
+      "same_context": true,
+      "delta_original_a3": 0.16666666666666666,
+      "delta_original_binary": -0.3333333333333333,
+      "delta_original_upper": -0.3333333333333333,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:sustainable_living:85",
+      "domain": "sustainable_living",
+      "same_context": true,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:sustainable_living:87",
+      "domain": "sustainable_living",
+      "same_context": true,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    },
+    {
+      "query_id": "brightpro:sustainable_living:94",
+      "domain": "sustainable_living",
+      "same_context": false,
+      "delta_original_a3": 0.0,
+      "delta_original_binary": 0.0,
+      "delta_original_upper": 0.0,
+      "delta_repaired_a3": 0.0
+    }
+  ],
+  "note": "Historical raw p=.0006 is a separate original-family record; the stored original_a3 reproduction p=.0002 is not its replacement."
+}

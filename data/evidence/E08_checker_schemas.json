@@ -1,0 +1,246 @@
+{
+  "fidelity": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "claims"
+    ],
+    "properties": {
+      "claims": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "claim_index",
+            "statement",
+            "reason",
+            "scope_class",
+            "fidelity",
+            "answer_span_ids"
+          ],
+          "properties": {
+            "claim_index": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "statement": {
+              "type": "string"
+            },
+            "reason": {
+              "type": "string"
+            },
+            "scope_class": {
+              "type": "string",
+              "enum": [
+                "factual_assertion",
+                "pure_discourse",
+                "ambiguous"
+              ]
+            },
+            "fidelity": {
+              "type": "string",
+              "enum": [
+                "faithful",
+                "mismatch",
+                "unclear"
+              ]
+            },
+            "answer_span_ids": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "uniqueItems": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "support": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "claims"
+    ],
+    "properties": {
+      "claims": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "claim_index",
+            "statement",
+            "reason",
+            "support",
+            "context_span_ids"
+          ],
+          "properties": {
+            "claim_index": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "statement": {
+              "type": "string"
+            },
+            "reason": {
+              "type": "string"
+            },
+            "support": {
+              "type": "string",
+              "enum": [
+                "supported",
+                "unsupported",
+                "unknown"
+              ]
+            },
+            "context_span_ids": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "uniqueItems": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "joint": {
+    "additionalProperties": false,
+    "properties": {
+      "claims": {
+        "items": {
+          "additionalProperties": false,
+          "properties": {
+            "answer_fidelity": {
+              "enum": [
+                "faithful",
+                "mismatch",
+                "unclear"
+              ],
+              "type": "string"
+            },
+            "claim_index": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "literal_context_support": {
+              "enum": [
+                "supported",
+                "unsupported",
+                "unknown"
+              ],
+              "type": "string"
+            },
+            "preserved_qualifiers": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "question_bindings": {
+              "items": {
+                "additionalProperties": false,
+                "properties": {
+                  "explanation": {
+                    "type": "string"
+                  },
+                  "role": {
+                    "enum": [
+                      "topic",
+                      "referent",
+                      "condition"
+                    ],
+                    "type": "string"
+                  },
+                  "catalog_id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "catalog_id",
+                  "role",
+                  "explanation"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "scope_class": {
+              "enum": [
+                "factual_assertion",
+                "pure_discourse",
+                "ambiguous"
+              ],
+              "type": "string"
+            },
+            "scope_reason": {
+              "type": "string"
+            },
+            "statement": {
+              "type": "string"
+            },
+            "support_reason": {
+              "type": "string"
+            },
+            "answer_span_ids": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "context_span_ids": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "claim_index",
+            "statement",
+            "scope_class",
+            "scope_reason",
+            "literal_context_support",
+            "answer_fidelity",
+            "answer_span_ids",
+            "context_span_ids",
+            "question_bindings",
+            "preserved_qualifiers",
+            "support_reason"
+          ],
+          "type": "object"
+        },
+        "type": "array"
+      }
+    },
+    "required": [
+      "claims"
+    ],
+    "type": "object"
+  },
+  "official_extraction": {
+    "description": "Structured output for statement generation.",
+    "properties": {
+      "statements": {
+        "description": "The generated statements from the answer",
+        "items": {
+          "type": "string"
+        },
+        "title": "Statements",
+        "type": "array"
+      }
+    },
+    "required": [
+      "statements"
+    ],
+    "title": "StatementGeneratorOutput",
+    "type": "object"
+  },
+  "local_extractor_wire_guard": "exact statements key, list of nonempty strings; [] valid terminal unknown",
+  "span_catalog": "160 Unicode per catalog entry, exact original substrings; no labels sent",
+  "batch_maximum": 6
+}

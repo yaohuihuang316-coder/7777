@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="510.23622pt" height="255.11811pt" viewBox="0 0 510.23622 255.11811" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-12T10:42:57.892416</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 255.11811 
+L 510.23622 255.11811 
+L 510.23622 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 334.632254 88.187609 
+Q 266.601055 88.187609 199.352479 88.187609 
+" clip-path="url(#pabdeba1eab)" style="fill: none; stroke-dasharray: 2.59,1.12; stroke-dashoffset: 0; stroke: #202020; stroke-width: 0.7; stroke-linecap: round"/>
+    <path d="M 202.552479 89.787609 
+L 199.352479 88.187609 
+L 202.552479 86.587609 
+" clip-path="url(#pabdeba1eab)" style="fill: none; stroke-dasharray: 2.59,1.12; stroke-dashoffset: 0; stroke: #202020; stroke-width: 0.7; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Arial'; text-anchor: start; fill: #202020" x="22.165354" y="19.964535" transform="rotate(-0 22.165354 19.964535)">a</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 9px; font-family: 'Arial'; text-anchor: start; fill: #202020" x="33.165354" y="19.959613" transform="rotate(-0 33.165354 19.959613)">Shared objects</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 8.5px; font-family: 'Arial'; text-anchor: middle; fill: #202020" x="110.976378" y="43.251816" transform="rotate(-0 110.976378 43.251816)">Context C</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 8.5px; font-family: 'Arial'; text-anchor: middle; fill: #315b75" x="110.976378" y="61.803257" transform="rotate(-0 110.976378 61.803257)">f1f794a64b58</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 8.5px; font-family: 'Arial'; text-anchor: middle; fill: #202020" x="266.598425" y="43.202011" transform="rotate(-0 266.598425 43.202011)">Answer A</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 8.5px; font-family: 'Arial'; text-anchor: middle; fill: #315b75" x="266.598425" y="61.762085" transform="rotate(-0 266.598425 61.762085)">9bb8dd6e34e3</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 8.5px; font-family: 'Arial'; text-anchor: middle; fill: #202020" x="422.220472" y="42.357324" transform="rotate(-0 422.220472 42.357324)">Payload</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 8.5px; font-family: 'Arial'; text-anchor: middle; fill: #315b75" x="422.220472" y="61.762085" transform="rotate(-0 422.220472 61.762085)">15c872883b65</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Arial'; text-anchor: middle; fill: #202020" x="117.20126" y="90.461515" transform="rotate(-0 117.20126 90.461515)">Hybrid</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Arial'; text-anchor: middle; fill: #202020" x="415.995591" y="91.406515" transform="rotate(-0 415.995591 91.406515)">Selection</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: middle; fill: #202020" x="266.598425" y="80.020457" transform="rotate(-0 266.598425 80.020457)">shared_with</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="line2d_1">
+    <path d="M 33.165354 156.416427 
+L 500.031496 156.416427 
+" clip-path="url(#pfcab56384c)" style="fill: none; stroke: #202020; stroke-width: 0.7; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 33.165354 179.331227 
+L 500.031496 179.331227 
+" clip-path="url(#pfcab56384c)" style="fill: none; stroke: #aaaaaa; stroke-width: 0.45; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 33.165354 202.246028 
+L 500.031496 202.246028 
+" clip-path="url(#pfcab56384c)" style="fill: none; stroke: #aaaaaa; stroke-width: 0.45; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 33.165354 225.160828 
+L 500.031496 225.160828 
+" clip-path="url(#pfcab56384c)" style="fill: none; stroke: #aaaaaa; stroke-width: 0.45; stroke-linecap: square"/>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Arial'; text-anchor: start; fill: #202020" x="22.165354" y="129.415297" transform="rotate(-0 22.165354 129.415297)">b</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 9px; font-family: 'Arial'; text-anchor: start; fill: #202020" x="33.165354" y="128.520922" transform="rotate(-0 33.165354 128.520922)">Position-level scoring</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 8.5px; font-family: 'Arial'; text-anchor: start; fill: #202020" x="33.165354" y="147.951292" transform="rotate(-0 33.165354 147.951292)">Position</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 8.5px; font-family: 'Arial'; text-anchor: middle; fill: #202020" x="219.911811" y="147.214183" transform="rotate(-0 219.911811 147.214183)">Completion</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 8.5px; font-family: 'Arial'; text-anchor: middle; fill: #202020" x="331.959685" y="147.961917" transform="rotate(-0 331.959685 147.961917)">a3</text>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 8.5px; font-family: 'Arial'; text-anchor: middle; fill: #202020" x="434.670236" y="148.001097" transform="rotate(-0 434.670236 148.001097)">Contribution</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 8.5px; font-family: 'Arial'; text-anchor: start; fill: #202020" x="33.165354" y="170.976189" transform="rotate(-0 33.165354 170.976189)">Hybrid</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 8.5px; font-family: 'Arial'; text-anchor: middle; fill: #202020" x="219.911811" y="171.831501" transform="rotate(-0 219.911811 171.831501)">0.5</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 8.5px; font-family: 'Arial'; text-anchor: middle; fill: #202020" x="331.959685" y="171.831501" transform="rotate(-0 331.959685 171.831501)">0.5</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 8.5px; font-family: 'Arial'; text-anchor: middle; fill: #202020" x="434.670236" y="171.831501" transform="rotate(-0 434.670236 171.831501)">0.2 × 0.5 = 0.10</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 8.5px; font-family: 'Arial'; text-anchor: start; fill: #202020" x="33.165354" y="194.785481" transform="rotate(-0 33.165354 194.785481)">Selection: old</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 8.5px; font-family: 'Arial'; text-anchor: middle; fill: #202020" x="219.911811" y="194.746301" transform="rotate(-0 219.911811 194.746301)">NULL → 1</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 8.5px; font-family: 'Arial'; text-anchor: middle; fill: #202020" x="331.959685" y="194.746301" transform="rotate(-0 331.959685 194.746301)">1.0</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 8.5px; font-family: 'Arial'; text-anchor: middle; fill: #202020" x="434.670236" y="194.746301" transform="rotate(-0 434.670236 194.746301)">0.2 × 1.0 = 0.20</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 8.5px; font-family: 'Arial'; text-anchor: start; fill: #202020" x="33.165354" y="217.700281" transform="rotate(-0 33.165354 217.700281)">Selection: corrected</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 8.5px; font-family: 'Arial'; text-anchor: middle; fill: #202020" x="219.911811" y="217.661102" transform="rotate(-0 219.911811 217.661102)">0.5</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 8.5px; font-family: 'Arial'; text-anchor: middle; fill: #202020" x="331.959685" y="217.661102" transform="rotate(-0 331.959685 217.661102)">0.5</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 8.5px; font-family: 'Arial'; text-anchor: middle; fill: #202020" x="434.670236" y="217.661102" transform="rotate(-0 434.670236 217.661102)">0.2 × 0.5 = 0.10</text>
+   </g>
+   <g id="text_30">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Arial'; text-anchor: middle; fill: #202020" x="266.598425" y="246.585245" transform="rotate(-0 266.598425 246.585245)">Selection − Hybrid: +0.10 → 0.00</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pabdeba1eab">
+   <rect x="33.165354" y="30.614173" width="466.866142" height="63.970484"/>
+  </clipPath>
+  <clipPath id="pfcab56384c">
+   <rect x="33.165354" y="139.230327" width="466.866142" height="95.478335"/>
+  </clipPath>
+ </defs>
+</svg>

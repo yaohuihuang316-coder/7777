@@ -1,0 +1,230 @@
+{
+  "rows": [
+    {
+      "id": "ragtruth-independent:15728",
+      "source_group": "15542",
+      "human_unsupported_present": true,
+      "split_endpoint": 1,
+      "joint_endpoint": 1
+    },
+    {
+      "id": "ragtruth-independent:12018",
+      "source_group": "14319",
+      "human_unsupported_present": false,
+      "split_endpoint": 0,
+      "joint_endpoint": 0
+    },
+    {
+      "id": "ragtruth-independent:13138",
+      "source_group": "15108",
+      "human_unsupported_present": false,
+      "split_endpoint": 1,
+      "joint_endpoint": 1
+    },
+    {
+      "id": "ragtruth-independent:12693",
+      "source_group": "14433",
+      "human_unsupported_present": true,
+      "split_endpoint": 1,
+      "joint_endpoint": 1
+    },
+    {
+      "id": "ragtruth-independent:17396",
+      "source_group": "12391",
+      "human_unsupported_present": false,
+      "split_endpoint": 0,
+      "joint_endpoint": null
+    },
+    {
+      "id": "ragtruth-independent:12044",
+      "source_group": "14323",
+      "human_unsupported_present": true,
+      "split_endpoint": 1,
+      "joint_endpoint": 1
+    },
+    {
+      "id": "ragtruth-independent:14395",
+      "source_group": "15320",
+      "human_unsupported_present": false,
+      "split_endpoint": 1,
+      "joint_endpoint": 0
+    },
+    {
+      "id": "ragtruth-independent:15735",
+      "source_group": "15543",
+      "human_unsupported_present": true,
+      "split_endpoint": 1,
+      "joint_endpoint": 1
+    },
+    {
+      "id": "ragtruth-independent:17056",
+      "source_group": "12334",
+      "human_unsupported_present": false,
+      "split_endpoint": 1,
+      "joint_endpoint": 0
+    },
+    {
+      "id": "ragtruth-independent:12017",
+      "source_group": "14318",
+      "human_unsupported_present": false,
+      "split_endpoint": 0,
+      "joint_endpoint": 0
+    },
+    {
+      "id": "ragtruth-independent:12766",
+      "source_group": "14445",
+      "human_unsupported_present": false,
+      "split_endpoint": 0,
+      "joint_endpoint": 0
+    },
+    {
+      "id": "ragtruth-independent:16510",
+      "source_group": "12243",
+      "human_unsupported_present": true,
+      "split_endpoint": 1,
+      "joint_endpoint": 1
+    },
+    {
+      "id": "ragtruth-independent:16905",
+      "source_group": "12309",
+      "human_unsupported_present": false,
+      "split_endpoint": 0,
+      "joint_endpoint": 0
+    },
+    {
+      "id": "ragtruth-independent:12604",
+      "source_group": "14418",
+      "human_unsupported_present": false,
+      "split_endpoint": 1,
+      "joint_endpoint": 0
+    },
+    {
+      "id": "ragtruth-independent:13720",
+      "source_group": "15206",
+      "human_unsupported_present": false,
+      "split_endpoint": 1,
+      "joint_endpoint": null
+    },
+    {
+      "id": "ragtruth-independent:17061",
+      "source_group": "12335",
+      "human_unsupported_present": false,
+      "split_endpoint": 1,
+      "joint_endpoint": null
+    },
+    {
+      "id": "ragtruth-independent:15007",
+      "source_group": "15422",
+      "human_unsupported_present": false,
+      "split_endpoint": 0,
+      "joint_endpoint": 0
+    },
+    {
+      "id": "ragtruth-independent:13562",
+      "source_group": "15180",
+      "human_unsupported_present": false,
+      "split_endpoint": 1,
+      "joint_endpoint": null
+    },
+    {
+      "id": "ragtruth-independent:15969",
+      "source_group": "15583",
+      "human_unsupported_present": false,
+      "split_endpoint": 1,
+      "joint_endpoint": 0
+    },
+    {
+      "id": "ragtruth-independent:14096",
+      "source_group": "15269",
+      "human_unsupported_present": false,
+      "split_endpoint": 1,
+      "joint_endpoint": 0
+    },
+    {
+      "id": "ragtruth-independent:17200",
+      "source_group": "12358",
+      "human_unsupported_present": false,
+      "split_endpoint": 1,
+      "joint_endpoint": 1
+    },
+    {
+      "id": "ragtruth-independent:16560",
+      "source_group": "12252",
+      "human_unsupported_present": false,
+      "split_endpoint": 1,
+      "joint_endpoint": 1
+    },
+    {
+      "id": "ragtruth-independent:15126",
+      "source_group": "15442",
+      "human_unsupported_present": false,
+      "split_endpoint": 1,
+      "joint_endpoint": null
+    },
+    {
+      "id": "ragtruth-independent:17572",
+      "source_group": "12423",
+      "human_unsupported_present": false,
+      "split_endpoint": 1,
+      "joint_endpoint": 1
+    },
+    {
+      "id": "ragtruth-independent:14715",
+      "source_group": "15373",
+      "human_unsupported_present": true,
+      "split_endpoint": 1,
+      "joint_endpoint": 1
+    },
+    {
+      "id": "ragtruth-independent:14282",
+      "source_group": "15300",
+      "human_unsupported_present": false,
+      "split_endpoint": 1,
+      "joint_endpoint": null
+    },
+    {
+      "id": "ragtruth-independent:12438",
+      "source_group": "14391",
+      "human_unsupported_present": false,
+      "split_endpoint": 0,
+      "joint_endpoint": 0
+    },
+    {
+      "id": "ragtruth-independent:13431",
+      "source_group": "15158",
+      "human_unsupported_present": false,
+      "split_endpoint": 1,
+      "joint_endpoint": 1
+    },
+    {
+      "id": "ragtruth-independent:12527",
+      "source_group": "14405",
+      "human_unsupported_present": false,
+      "split_endpoint": 1,
+      "joint_endpoint": 1
+    },
+    {
+      "id": "ragtruth-independent:13208",
+      "source_group": "15120",
+      "human_unsupported_present": false,
+      "split_endpoint": 1,
+      "joint_endpoint": 1
+    },
+    {
+      "id": "ragtruth-independent:12437",
+      "source_group": "14390",
+      "human_unsupported_present": false,
+      "split_endpoint": 1,
+      "joint_endpoint": null
+    },
+    {
+      "id": "ragtruth-independent:13909",
+      "source_group": "15238",
+      "human_unsupported_present": false,
+      "split_endpoint": 1,
+      "joint_endpoint": 1
+    }
+  ],
+  "polarity": "1=reference hallucination/unsupported assertion; null=unknown",
+  "note": "Human spans, model identities and response content omitted; row membership equals the archived 32-group barrier set."
+}

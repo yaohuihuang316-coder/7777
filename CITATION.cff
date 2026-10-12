@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite this research artifact and the underlying datasets separately."
+title: "Measurement provenance and warranted claims in reasoning intensive retrieval: public research artifacts"
+type: dataset
+authors:
+  - family-names: Huang
+    given-names: Yaohui
+version: "public-text-redacted-v1"
+date-released: "2026-10-12"
+repository-code: "https://github.com/yaohuihuang316-coder/7777"
+url: "https://github.com/yaohuihuang316-coder/7777"
